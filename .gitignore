@@ -1,0 +1,14 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+ip_venv/
+
+# IDE-specific ignores
+.vscode/
+.idea/
