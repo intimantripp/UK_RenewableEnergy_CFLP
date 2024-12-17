@@ -48,3 +48,14 @@ desktop.ini
 Outputs/
 Data/archive
 Data/
+
+# LaTeX build files
+report/build/
+report/*.aux
+report/*.log
+report/*.toc
+report/*.lof
+report/*.lot
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

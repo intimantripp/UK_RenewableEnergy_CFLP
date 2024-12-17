@@ -3,6 +3,7 @@ import numpy as np
 from pyomo.environ import (ConcreteModel, Var, Objective, Constraint, Set, Param, 
                            NonNegativeReals, Binary, SolverFactory, minimize, value)
 from optimisation.baseline_model import setup_model
+from optimisation.adjust_to_feasibility_3 import adjust_to_feasibility_3
 import time
 
 
@@ -56,7 +57,17 @@ def setup_model_LR(demand_df, supply_df, costs_df, lambda_values, M):
     
     model.DemandSatisfaction = Constraint(model.D, model.T, rule=demand_satisfaction_rule)
 
+    # Big M implementation to impose built constraints
+    big_M = 10000000
+    def supply_if_built_rule(model, s, d, t):
+        return model.x[s, d, t] <= big_M * model.y[s]
+    
+    model.SupplyIfBuilt = Constraint(model.S, model.D, model.T, rule=supply_if_built_rule)
+
+
     return model
+
+
 
 
 def adjust_to_feasibility_2(model, epsilon=1e-6, max_iterations=100):
@@ -131,8 +142,8 @@ def adjust_to_feasibility_2(model, epsilon=1e-6, max_iterations=100):
         feasible_y[s] = 1 if supplied_from_s > epsilon else 0
         if feasible_y[s] == 1:
             constructed_sites.add(s)
-        # if feasible_y[s] == 1 and value(model.y[s]) != 1:
-        #     print(f"Site {s} provides {supplied_from_s:.4f} energy but its y is {value(model.y[s]):.4f}. Setting y[s] to 1.")
+        if feasible_y[s] == 1 and value(model.y[s]) != 1:
+            print(f"Site {s} provides {supplied_from_s:.4f} energy but its y is {value(model.y[s]):.4f}. Setting y[s] to 1.")
     
     # Step 4: calculate implied feasible cost
     feasible_cost = 0
@@ -332,7 +343,7 @@ def run_LR_heuristic(demand_df, supply_df, costs_df, model_solver='gurobi',
 
 
         # Adjust LR solution to feasible solution
-        adjusted_x, feasible_y, feasible_cost = adjust_to_feasibility_2(lr_model)
+        adjusted_x, feasible_y, feasible_cost = adjust_to_feasibility_3(lr_model)
         Z_feas = min(Z_feas, feasible_cost)
         print("Z_LR: ", Z_LR, "Z_feas: ", Z_feas)
         if Z_feas > 0:

@@ -8,13 +8,13 @@ from optimisation.lr_heurstic_2 import run_LR_heuristic
 parameters = {
     "solver": "gurobi",
     "max_iterations": 50,
-    "step_size": 1e5,
-    "tolerance": 0.1,
+    "step_size": 1e4,
+    "tolerance": 0.01,
     "output_directory": "Outputs/",
     "run_baseline": True,
     "run_LR_heuristic": True,
-    "baseline_suffix": "test_5",
-    "lr_suffix": "test_5",
+    "baseline_suffix": "test_3_feas3",
+    "lr_suffix": "test_3_feas3",
     "Big M": 0
 }
 
@@ -38,9 +38,9 @@ parameters = {
 
 
 # Test 3
-# supply_df = pd.read_csv("Data/test_3_supply_n30.csv")
-# demand_df = pd.read_csv("Data/test_3_demand_n30.csv")
-# costs_df = pd.read_csv("Data/test_3_costs_n30_n30.csv")
+supply_df = pd.read_csv("Data/test_3_supply_n30.csv")
+demand_df = pd.read_csv("Data/test_3_demand_n30.csv")
+costs_df = pd.read_csv("Data/test_3_costs_n30_n30.csv")
 
 
 # Test 4
@@ -50,9 +50,9 @@ parameters = {
 
 
 # Test 5
-supply_df = pd.read_csv("Data/test_5_supply_n100.csv")
-demand_df = pd.read_csv("Data/test_5_demand_n100.csv")
-costs_df = pd.read_csv("Data/test_5_costs_n100_n100.csv")
+# supply_df = pd.read_csv("Data/test_5_supply_n100.csv")
+# demand_df = pd.read_csv("Data/test_5_demand_n100.csv")
+# costs_df = pd.read_csv("Data/test_5_costs_n100_n100.csv")
 
 
 

@@ -1,0 +1,84 @@
+Lagrangian relaxation (LR) has been used extensively in CFLP problems ADD THE CITATIONS HERE. It is 
+fundamentally a technique for obtaining a lower bound on the original problem, and solving the LR
+of a problem commonly forms a step in algorithms aiming to find approximate solutions.
+The LR reformulates a problem by moving one of the constraints into the objective function and 
+weights the new term with a set of $\lambda \geq 0$ parameters. The LR of a problem can therefore violate the
+constraint but is penalised for doing so. 
+Crucially, the solution of the LR provides a lower bound on the optimal value of the original solution. 
+In this report we consider moving the capacity constraint \ref{eq:ESLP_cap} in the ESLP \ref{eq:ESLP} into 
+the objective function, obtaining the LR ESLP.
+
+\begin{subequations}\label{eq:LR_ESLP}
+    \begin{align}
+    \text{LR ESLP: } \min \quad \sum_{s \in S} f_s y_s + &\sum_{s \in S}\sum_{d \in D}\sum_{t \in T} c_{s,d,t} x_{s,d,t} + \sum_{s \in S}\sum_{t \in T} \lambda_{s,t} \left( \sum_{d \in D} x_{s,d,t} - u_s y_s \right) \label{eq:LR_ESLP_obj} \\
+    \text{subject to: } &\sum_{s \in S} x_{s,d,t} \geq r_{d,t}, \quad \forall d \in D, \forall t \in T, \label{eq:LR_ESLP_dem} \\
+    &y_s \in \{0, 1\}, \quad \forall s \in S, \label{eq:LR_ESLP_y} \\
+    &x_{s,d,t} \geq 0, \quad \forall s \in S, \forall d \in D, \forall t \in T. \label{eq:LR_ESLP_x}
+    \end{align}
+\end{subequations}
+
+
+Here we have introduced the parameters $\lambda_{s, t} \geq 0 \quad \forall S, \forall T$ that play the role of penalising any supply sites $s$ which exceed their capacity constraints at time $t$.
+A proof that any minimised objective function value of \ref{eq:LR_ESLP_obj} for given values of $\lambda_{s,t}$ is a lower bound on the objective function of the ESLP \ref{eq:ESLP_obj} is as follows.\par
+
+
+Let
+
+\begin{equation}\label{eq:Lagrangian}
+    \begin{aligned}
+        \mathcal{L}(x,y,\lambda) &= \sum_{s \in S} f_s y_s + \sum_{s \in S}\sum_{d \in D}\sum_{t \in T} c_{s,d,t} x_{s,d,t} + \sum_{s \in S}\sum_{t \in T} \lambda_{s,t} \left( \sum_{d \in D} x_{s,d,t} - u_s y_s \right) \\
+        &= Z(x, y) + \sum_{s \in S}\sum_{t \in T} \lambda_{s,t} \left( \sum_{d \in D} x_{s,d,t} - u_s y_s \right)
+    \end{aligned}    
+\end{equation}
+
+where $Z(x,y)$ is the objective function \eqref{eq:ESLP_obj} in the original ESLP.
+
+From the capacity constraints in the ESLP \eqref{eq:ESLP_cap}, we obtain that:
+
+\begin{equation}\label{eq:capacity_constraints}
+    \sum_{d \in D} x_{s,d,t} \leq u_{s,t} y_s, \quad \forall s \in S, \forall t \in T,
+\end{equation}
+
+which can be rewritten as:
+
+\begin{equation}\label{eq:capacity_constraints_rearranged}
+    \sum_{d \in D} x_{s,d,t} - u_{s,t} y_s \leq 0, \quad \forall s \in S, \forall t \in T.
+\end{equation}
+
+Multiplying both sides of \eqref{eq:capacity_constraints_rearranged} by the non-negative Lagrange multipliers $\lambda_{s,t} \geq 0$, we obtain:
+
+\begin{equation}\label{eq:lagrange_multiplied}
+    \lambda_{s,t} \left( \sum_{d \in D} x_{s,d,t} - u_{s,t} y_s \right) \leq 0, \quad \forall s \in S, \forall t \in T.
+\end{equation}
+
+Substituting \eqref{eq:lagrange_multiplied} into the Lagrangian \eqref{eq:Lagrangian}, we get:
+
+\begin{equation}\label{eq:Lagrangian_bound}
+    \mathcal{L}(x,y,\lambda) \leq Z(x,y), \quad \forall (x,y) \text{ feasible for ESLP}.
+\end{equation}
+
+Taking the infimum over all feasible solutions $(x,y)$ of ESLP, we obtain the dual function:
+
+\begin{equation}\label{eq:dual_function}
+    g(\lambda) = \inf_{x \geq 0, y \in \{0,1\}} \mathcal{L}(x,y,\lambda) \leq \inf_{x \geq 0, y \in \{0,1\}} Z(x,y) = Z^*,
+\end{equation}
+
+where $Z^*$ is the optimal objective value of the original ESLP \eqref{eq:ESLP_obj}.
+
+Finally, by maximizing the dual function over all non-negative Lagrange multipliers $\lambda \geq 0$, we obtain the Lagrangian dual problem:
+
+\begin{equation}\label{eq:dual_problem}
+    \max_{\lambda \geq 0} \, g(\lambda) \leq Z^*.
+\end{equation}
+
+Thus, the optimal value of the Lagrangian dual problem $Z_{LR}^*$ satisfies:
+
+\begin{equation}\label{eq:lower_bound}
+    Z_{LR}^* = \max_{\lambda \geq 0} \, g(\lambda) \leq Z^*.
+\end{equation}
+
+This inequality confirms that the Lagrangian Relaxation provides a lower bound to the original ESLP,
+for any $(x_{LR}, y_{LR})$ that are feasible solutions to the LR ESLP.
+
+Further, if $(x_{LR}, y_{LR})$ is also a feasible solutions to the the ESLP, then 
+$Z(x_{LR}, y_{LR})$ provides an upper bound on the ESLP also. This motivates the LR Heuristic described in the next section.
