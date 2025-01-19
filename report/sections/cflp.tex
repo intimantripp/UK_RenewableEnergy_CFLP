@@ -4,18 +4,19 @@ and each supply site is subject to capacity constraints, meaning there is an upp
 supply a site can provide.
 
 Mathematically the problem is formulated in the following way. First, let $S$ be the set of supply sites, 
-indexed by $s \in S$ and let $D$ be the set of demand sites, indexed by $d \in D$. By $c_{s,d}$ we denote the
-cost associated with site s supplying site d and by $f_s$ we denote the setup cost associated with constructing site $s$.
-By $u_s$ we denote the maximum capacity that site $s$ can supply overall and by $r_d$ we denote the amount of demand 
+indexed by $s \in S$ and let $D$ be the set of demand sites, indexed by $d \in D$. By $c_{s,d}$ we 
+denote the cost associated with site s supplying a single unit of supply to demand site d and by 
+$f_s$ we denote the setup cost associated with constructing site $s$.
+By $u_s$ we denote the maximum capacity that site $s$ can supply overall and by $r_d$ we denote the demand 
 required to be met at at site $d$. The decision variables in this problem are $x_{s,d} \in \mathbb{R}_{\geq 0}$, denoting the amount 
 supplied by supply site $s$ to demand site $d$, and $y_s \in \mathbb{B}$, a binary variables indicating whether site 
 $s$ has been constructed. With these defined the problem can be formulated as such:
 
 \begin{subequations}\label{eq:CFLP}
     \begin{align}
-    \text{CFLP: } \quad \quad \min \quad & \sum_{s \in S} f_s y_s + \sum_{s \in S}\sum_{d \in D} c_{s,d} x_{s,d} \label{eq:CFLP_obj}\\
-    \text{subject to: } \sum_{s \in S} x_{s,d} &\geq r_d, \quad \forall d \in D,\label{eq:CFLP_dem}\\
-    \sum_{d \in D} x_{s,d} &\leq u_s y_s, \quad \forall s \in S,\label{eq:CFLP_cap}\\
+    \text{CFLP: } \min & \sum_{s \in S} f_s y_s + \sum_{s \in S}\sum_{d \in D} c_{s,d} x_{s,d} \label{eq:CFLP_obj}\\
+    \text{subject to: } &\sum_{s \in S} x_{s,d} \geq r_d, \quad \forall d \in D,\label{eq:CFLP_dem}\\
+    &\sum_{d \in D} x_{s,d} \leq u_s y_s, \quad \forall s \in S,\label{eq:CFLP_cap}\\
     y_s &\in \{0, 1\}, \quad \forall s \in S,\label{eq:CFLP_y}\\
     x_{s,d} &\geq 0, \quad \forall s \in S, \forall d \in D.\label{eq:CFLP_x}
     \end{align}

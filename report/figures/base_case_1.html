@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bef4a7564b76d054d0b5bafd503421a2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    test title for now
+    
+            <div class="folium-map" id="map_bef4a7564b76d054d0b5bafd503421a2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bef4a7564b76d054d0b5bafd503421a2 = L.map(
+                "map_bef4a7564b76d054d0b5bafd503421a2",
+                {
+                    center: [53.9819, -2.5421],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": null,
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4db7ca77b5005fbf4c11b6b9427a8621 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4db7ca77b5005fbf4c11b6b9427a8621.addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+        
+    
+            var marker_cluster_1aa4f97b95fca162f39e01c6dcbd304b = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_9192205a2202e3793406d527a930cc99 = L.marker(
+                [50.8225, -0.1372],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(marker_cluster_1aa4f97b95fca162f39e01c6dcbd304b);
+        
+    
+            var icon_f5994327c23bfbd838e7baf75f686a48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9192205a2202e3793406d527a930cc99.setIcon(icon_f5994327c23bfbd838e7baf75f686a48);
+        
+    
+        var popup_a3d3930980830db96ec8ef09f0be2f18 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_af16a45110f81eb8d3a51d1a69896ed9 = $(`<div id="html_af16a45110f81eb8d3a51d1a69896ed9" style="width: 100.0%; height: 100.0%;">Supply Site: Glendoe Hydro Scheme</div>`)[0];
+                popup_a3d3930980830db96ec8ef09f0be2f18.setContent(html_af16a45110f81eb8d3a51d1a69896ed9);
+            
+        
+
+        marker_9192205a2202e3793406d527a930cc99.bindPopup(popup_a3d3930980830db96ec8ef09f0be2f18)
+        ;
+
+        
+    
+    
+            var marker_17357c28a8a63bb922e667a87cea8c2e = L.marker(
+                [53.33601603, -0.742568747],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(marker_cluster_1aa4f97b95fca162f39e01c6dcbd304b);
+        
+    
+            var icon_80c98b514fc1dc726ccd728b25f163c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_17357c28a8a63bb922e667a87cea8c2e.setIcon(icon_80c98b514fc1dc726ccd728b25f163c2);
+        
+    
+        var popup_a25bdc9667547b3f614f16f6f998c5c6 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_6c7b06d792e344af5a0228387d5b9ec4 = $(`<div id="html_6c7b06d792e344af5a0228387d5b9ec4" style="width: 100.0%; height: 100.0%;">Supply Site: Gate Burton - Solar & Energy Storage Park</div>`)[0];
+                popup_a25bdc9667547b3f614f16f6f998c5c6.setContent(html_6c7b06d792e344af5a0228387d5b9ec4);
+            
+        
+
+        marker_17357c28a8a63bb922e667a87cea8c2e.bindPopup(popup_a25bdc9667547b3f614f16f6f998c5c6)
+        ;
+
+        
+    
+    
+            var marker_15f1abd5f26aa5dc11bfaa9b51acbc52 = L.marker(
+                [56.44313898606738, -1.466402017],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(marker_cluster_1aa4f97b95fca162f39e01c6dcbd304b);
+        
+    
+            var icon_5bf81e692f9dd4149adf40ff64e2fc89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_15f1abd5f26aa5dc11bfaa9b51acbc52.setIcon(icon_5bf81e692f9dd4149adf40ff64e2fc89);
+        
+    
+        var popup_3fa5052e861df5199e3972ad5c60f9cf = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_744c4c2ec9ba218ad9253a0387499bbb = $(`<div id="html_744c4c2ec9ba218ad9253a0387499bbb" style="width: 100.0%; height: 100.0%;">Supply Site: Berwick Bank Offshore Wind Farm</div>`)[0];
+                popup_3fa5052e861df5199e3972ad5c60f9cf.setContent(html_744c4c2ec9ba218ad9253a0387499bbb);
+            
+        
+
+        marker_15f1abd5f26aa5dc11bfaa9b51acbc52.bindPopup(popup_3fa5052e861df5199e3972ad5c60f9cf)
+        ;
+
+        
+    
+    
+            marker_cluster_1aa4f97b95fca162f39e01c6dcbd304b.addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+        
+    
+            var marker_cluster_4c4dea745215da8d6d98105927c0b5dd = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_09c6025d3819d82c2aa9f04016392fcb = L.marker(
+                [51.5128, -0.0918],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(marker_cluster_4c4dea745215da8d6d98105927c0b5dd);
+        
+    
+            var icon_7f9570a9b6f3ec93feb0b516085ed01f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_09c6025d3819d82c2aa9f04016392fcb.setIcon(icon_7f9570a9b6f3ec93feb0b516085ed01f);
+        
+    
+        var popup_5564d3c91d4ad944488acf0a30ab86a3 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_052f430fa4086665b71e1414339b1364 = $(`<div id="html_052f430fa4086665b71e1414339b1364" style="width: 100.0%; height: 100.0%;">Demand Site: City of London</div>`)[0];
+                popup_5564d3c91d4ad944488acf0a30ab86a3.setContent(html_052f430fa4086665b71e1414339b1364);
+            
+        
+
+        marker_09c6025d3819d82c2aa9f04016392fcb.bindPopup(popup_5564d3c91d4ad944488acf0a30ab86a3)
+        ;
+
+        
+    
+    
+            var marker_9e3e2a014355ad5a6dfeb61998acef77 = L.marker(
+                [55.9533, -3.1883],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(marker_cluster_4c4dea745215da8d6d98105927c0b5dd);
+        
+    
+            var icon_af22a63c38d1b3c7f817c975b96852ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9e3e2a014355ad5a6dfeb61998acef77.setIcon(icon_af22a63c38d1b3c7f817c975b96852ed);
+        
+    
+        var popup_aa3c1c68072bd885604b4fb014c60158 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_149fc1800cf2be2d7e9cad6bd714186a = $(`<div id="html_149fc1800cf2be2d7e9cad6bd714186a" style="width: 100.0%; height: 100.0%;">Demand Site: City of Edinburgh</div>`)[0];
+                popup_aa3c1c68072bd885604b4fb014c60158.setContent(html_149fc1800cf2be2d7e9cad6bd714186a);
+            
+        
+
+        marker_9e3e2a014355ad5a6dfeb61998acef77.bindPopup(popup_aa3c1c68072bd885604b4fb014c60158)
+        ;
+
+        
+    
+    
+            var marker_7a966706502cac3f311891f24c41dc36 = L.marker(
+                [52.4862, -1.8904],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(marker_cluster_4c4dea745215da8d6d98105927c0b5dd);
+        
+    
+            var icon_52f9d07380bc6b9bdcfb1d6269bcaf82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a966706502cac3f311891f24c41dc36.setIcon(icon_52f9d07380bc6b9bdcfb1d6269bcaf82);
+        
+    
+        var popup_e2ba755e283e7b8e92af2fd18e45ae41 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_803b317291aafaed0214bed00031eaca = $(`<div id="html_803b317291aafaed0214bed00031eaca" style="width: 100.0%; height: 100.0%;">Demand Site: Birmingham</div>`)[0];
+                popup_e2ba755e283e7b8e92af2fd18e45ae41.setContent(html_803b317291aafaed0214bed00031eaca);
+            
+        
+
+        marker_7a966706502cac3f311891f24c41dc36.bindPopup(popup_e2ba755e283e7b8e92af2fd18e45ae41)
+        ;
+
+        
+    
+    
+            marker_cluster_4c4dea745215da8d6d98105927c0b5dd.addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+        
+    
+            var poly_line_c6be20041e50867b4248620a67b79378 = L.polyline(
+                [[56.44313898606738, -1.466402017], [55.9533, -3.1883]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.0}
+            ).addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+        
+    
+            var poly_line_6763a170d29ebab000d1d0c8beaec648 = L.polyline(
+                [[53.33601603, -0.742568747], [52.4862, -1.8904]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.0}
+            ).addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+        
+    
+            var poly_line_fb0cc87480b8e323287ee843f619b382 = L.polyline(
+                [[50.8225, -0.1372], [51.5128, -0.0918]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.0}
+            ).addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+        
+    
+            var layer_control_31db9b9202f3e6bb0eb0ef218100e125_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4db7ca77b5005fbf4c11b6b9427a8621,
+                },
+                overlays :  {
+                    "Supply Sites" : marker_cluster_1aa4f97b95fca162f39e01c6dcbd304b,
+                    "Demand Sites" : marker_cluster_4c4dea745215da8d6d98105927c0b5dd,
+                },
+            };
+            let layer_control_31db9b9202f3e6bb0eb0ef218100e125 = L.control.layers(
+                layer_control_31db9b9202f3e6bb0eb0ef218100e125_layers.base_layers,
+                layer_control_31db9b9202f3e6bb0eb0ef218100e125_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_bef4a7564b76d054d0b5bafd503421a2);
+
+        
+</script>
+</html>

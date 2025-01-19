@@ -93,7 +93,7 @@ def run_baseline_model(demand_df, supply_df, costs_df, output_directory="", outp
     model = setup_model(demand_df, supply_df, costs_df)
 
     #create the solver
-    solver = SolverFactory(model_solver)
+    solver = SolverFactory(model_solver, tee=True)
     results = solver.solve(model)
 
     supply_results, summary_results = create_results_dfs(results, model)

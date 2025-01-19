@@ -1,4 +1,4 @@
-Lagrangian relaxation (LR) has been used extensively in CFLP problems ADD THE CITATIONS HERE. It is 
+Lagrangian relaxation (LR) has been used extensively in CFLP problems \cite{cornuejols1991comparison}. It is 
 fundamentally a technique for obtaining a lower bound on the original problem, and solving the LR
 of a problem commonly forms a step in algorithms aiming to find approximate solutions.
 The LR reformulates a problem by moving one of the constraints into the objective function and 
@@ -6,7 +6,9 @@ weights the new term with a set of $\lambda \geq 0$ parameters. The LR of a prob
 constraint but is penalised for doing so. 
 Crucially, the solution of the LR provides a lower bound on the optimal value of the original solution. 
 In this report we consider moving the capacity constraint \ref{eq:ESLP_cap} in the ESLP \ref{eq:ESLP} into 
-the objective function, obtaining the LR ESLP.
+the objective function, obtaining the LR ESLP. The capacity constraint is chosen for 
+relaxation as it is this constraint which couples this problem's decision variables,
+therefore adding additional complexity to the problem.
 
 \begin{subequations}\label{eq:LR_ESLP}
     \begin{align}
@@ -31,7 +33,7 @@ Let
     \end{aligned}    
 \end{equation}
 
-where $Z(x,y)$ is the objective function \eqref{eq:ESLP_obj} in the original ESLP.
+where $Z(x,y)$ is the objective function in the original ESLP \eqref{eq:ESLP_obj}.
 
 From the capacity constraints in the ESLP \eqref{eq:ESLP_cap}, we obtain that:
 

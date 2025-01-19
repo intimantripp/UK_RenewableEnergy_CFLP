@@ -1,0 +1,70 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{wu2006capacitated}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8db8deee9190fce4db4f770c7e216780}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ling-Yun},
+           giveni={L\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=a0e4503f5367b51dff3442a7efb683f0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiang-Sun},
+           giveni={X\bibinithyphendelim S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=a62f65d65d5890bb051334ea2c409561}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ju-Liang},
+           giveni={J\bibinithyphendelim L\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{fullhash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{bibnamehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{authorbibnamehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{authornamehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{authorfullhash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{number}{5}
+      \field{title}{Capacitated facility location problem with general setup cost}
+      \field{volume}{33}
+      \field{year}{2006}
+      \field{pages}{1226\bibrangedash 1241}
+      \range{pages}{16}
+    \endentry
+  \enddatalist
+  \missing{geoffrion1972lagrangian}
+\endrefsection
+\endinput
+

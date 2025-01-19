@@ -1,0 +1,32 @@
+
+To obtain proper estimates for the ESLP, we required:
+
+\begin{enumerate}
+    \item Demand: Time series of energy demands for different centres across the UK
+    \item Setup Costs: Estimates of UK Renewable Energy Site Setup Costs
+    \item Supply Site Capacities: Estimates of UK Renewable Energy Site capacities
+    \item Supply Costs: Estimates of generation and transmission costs for different UK Renewable Energy 
+\end{enumerate}
+
+Item 1 was obtained from public UK government data on annual UK
+electricity consumption statistics across 296 regional authorities from 2005 to 2022 \cite{sub_national_electricity_consumption}.
+This provided a timeseries of annual electricity demand across different regional authorities.
+Items 2 and 3 were obtained from UK government datasets on all current and completed UK Renewable 
+Energy Plants construction projects exceeding 1MW (1880 in total). This included site locations,
+technology types e.g. Hydro, Wind, Solar, and capacity.
+Based on technology types and capacity, an estimate of setup cost was obtained by combining these
+with energy setup capital costs for different technology types, obtained from \cite{nalley2022annual}. Annual capacities 
+were obtained by scaling capacity up to cover a year.
+
+\begin{equation}
+    \text{Setup Cost}_{USD} = \text{Capacity}_{MWh} \times \text{Capital Cost}_{USD KWh^{-1}} \times 1000 
+\end{equation}.
+
+Generation costs in item 3 were obtained from \cite{irena2020}, which provides generation costs (USD) per KWH. 
+For transmission, we assumed that all transport was done through overhead wires and obtain an estimate
+of 0.0258 USD per km per MWh \cite{desantis2021cost}. A cost per unit of energy between any supply and 
+demand locations could then be estimated by calculating the geodesic between two locations. \par
+
+We obtained therefore a list of locations and their energy requirements over time, a list of supply sites,
+their setup costs and their capacities, and finally an estimate of supply costs between all demand sites and 
+supply sites.

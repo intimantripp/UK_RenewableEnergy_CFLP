@@ -1,0 +1,20 @@
+A number of future modifications suggested themselves through this project.
+
+Modifying the subgradient algorithm, for instance by using the r-algorithm as is done in 
+\cite{wu2006capacitated} is one possibility, although it is unlikely this would drastically
+improve the LR ESLP such that the method becomes comparable to the gurobi solver.
+
+A more interesting modification would be to introduce time-dependency on when sites can be setup, 
+rather than assuming all sites are constructed at initiation. This would make such modelling far more
+relevant for capital-cost forecasting, as prolonging a site's 
+construction until such a time as it is needed could then alter its setup-costs through
+time-value-of-money considerations. This could result in more realistic solutions being optimal.
+For instance, if demand were expected to rise at some future date at one site drastically, delaying
+constructiong to meet the additional demand until it is realised could result in lower
+total cost.
+
+A very practical improvement would be to extend this model to consider storage capabilities at different
+sites too, incorporating different storage technologies and associated costs and savings in 
+utilising them. This could potentially make some facilities like solar and wind more appealing,
+although the additional complexity of considering at every site an optimal storage technology
+would significantly increase the size of the problem.

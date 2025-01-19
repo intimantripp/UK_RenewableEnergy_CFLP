@@ -297,7 +297,7 @@ def create_LR_results_dfs(model, adjusted_x, feasible_y, true_cost, time_taken,
 
 def run_LR_heuristic(demand_df, supply_df, costs_df, model_solver='gurobi',
                     max_iterations=50, tolerance=1e-4, step_size=10, save_results=True,
-                    output_directory="", output_suffix="", big_M=0):
+                    output_directory="", output_suffix="", big_M=0, diminishing=True):
     """
     Run the LR heuristic
     1. Initialise lambda values
@@ -322,7 +322,7 @@ def run_LR_heuristic(demand_df, supply_df, costs_df, model_solver='gurobi',
     lambda_values = {}
     for s in supply_df['Supply Site'].unique():
         for t in demand_df['Year'].unique():
-            lambda_values[(s, t)] = 0.0 # small positive multiplier initially. 0s lead to poor solutions
+            lambda_values[(s, t)] = 0.0 # 
     
     Z_LR = float('-inf') # initial lower bound
     Z_feas = float('inf') # initial upper bound
@@ -372,15 +372,22 @@ def run_LR_heuristic(demand_df, supply_df, costs_df, model_solver='gurobi',
                 print("No violations and LR objective stable. Stopping.")
                 break
 
-        for (s, t), v in violations.items():
-            if v > 0:
-                # print("We have a violation: ",(s, t))
-                lambda_values[(s, t)] += step_size * v
-            lambda_values[(s, t)] = max(0, lambda_values[(s, t)])
+        # Compute Polyak step-size:
+        # alpha_k = (UB - LB) / sum(violation^2)
+        # Ensure we have at least one violation > 0 to avoid division by zero
+        denom = sum((v**2 for v in violations.values()))
+        if denom == 0:
+            # If no violations, no update needed, just continue
+            previous_Z_LR = Z_LR
+            continue
 
-        # Decrease step size
-        step_size *= 0.999
-        # Record Z_LR 
+        alpha_k = (Z_feas - Z_LR) / denom
+
+        # Update multipliers
+        for (s, t), v in violations.items():
+            new_val = lambda_values[(s, t)] + alpha_k * v
+            lambda_values[(s, t)] = max(0.0, new_val)
+
         previous_Z_LR = Z_LR
 
     end_time = time.time()

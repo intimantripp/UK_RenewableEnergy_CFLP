@@ -1,0 +1,402 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{wu2006capacitated}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8db8deee9190fce4db4f770c7e216780}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ling-Yun},
+           giveni={L\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=a0e4503f5367b51dff3442a7efb683f0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiang-Sun},
+           giveni={X\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=a62f65d65d5890bb051334ea2c409561}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ju-Liang},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{fullhash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{bibnamehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{authorbibnamehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{authornamehash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \strng{authorfullhash}{dbe10fec9e58adfd52812c8f2fa34b3c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{number}{5}
+      \field{title}{Capacitated facility location problem with general setup cost}
+      \field{volume}{33}
+      \field{year}{2006}
+      \field{pages}{1226\bibrangedash 1241}
+      \range{pages}{16}
+    \endentry
+    \entry{hoffmann2024review}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=e87c127ce206385207e8c5ed7d6981fa}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fe482fc51fc211adf06407ff971d0e8b}{%
+           family={Schyska},
+           familyi={S\bibinitperiod},
+           given={Bruno\bibnamedelima U},
+           giveni={B\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=6dc1d66871e7af965544ec86b05f0834}{%
+           family={Bartels},
+           familyi={B\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b36ad666ae0d3e57073fcafdc3f1510}{%
+           family={Pelser},
+           familyi={P\bibinitperiod},
+           given={Tristan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4cba70e846b7c3c2abc8c889baef7ee5}{%
+           family={Behrens},
+           familyi={B\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=46ced05790dff7d617dde410ebee28b8}{%
+           family={Wetzel},
+           familyi={W\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e4b902e539b47de9de768a441f0655f2}{%
+           family={Gils},
+           familyi={G\bibinitperiod},
+           given={Hans\bibnamedelima Christian},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=15a06985c82e5861de9cfa3ddc370db8}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Chuen-Fung},
+           giveni={C\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=e759e75eb5118bd8c2537dadb268494d}{%
+           family={Tillmanns},
+           familyi={T\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4728efa1e56130962cfc984b9edc4b0e}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{39828f7fa91b0b54ada82a85a77af145}
+      \strng{fullhash}{970afdaa7359871e3fd5150418071e6c}
+      \strng{bibnamehash}{39828f7fa91b0b54ada82a85a77af145}
+      \strng{authorbibnamehash}{39828f7fa91b0b54ada82a85a77af145}
+      \strng{authornamehash}{39828f7fa91b0b54ada82a85a77af145}
+      \strng{authorfullhash}{970afdaa7359871e3fd5150418071e6c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Applied Energy}
+      \field{title}{A review of mixed-integer linear formulations for framework-based energy system models}
+      \field{year}{2024}
+      \field{pages}{100190}
+      \range{pages}{1}
+    \endentry
+    \entry{nakata2011application}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7b8e9635d20e792e00ca65ea50cbf582}{%
+           family={Nakata},
+           familyi={N\bibinitperiod},
+           given={Toshihiko},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7a83140f7fc8776f4581c446e8e7d406}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=048f7100f6ba3340bc38397ff06f4a4e}{%
+           family={Rodionov},
+           familyi={R\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{31afdac860601e573342f8d96989f8ad}
+      \strng{fullhash}{31afdac860601e573342f8d96989f8ad}
+      \strng{bibnamehash}{31afdac860601e573342f8d96989f8ad}
+      \strng{authorbibnamehash}{31afdac860601e573342f8d96989f8ad}
+      \strng{authornamehash}{31afdac860601e573342f8d96989f8ad}
+      \strng{authorfullhash}{31afdac860601e573342f8d96989f8ad}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Energy and Combustion Science}
+      \field{number}{4}
+      \field{title}{Application of energy system models for designing a low-carbon society}
+      \field{volume}{37}
+      \field{year}{2011}
+      \field{pages}{462\bibrangedash 502}
+      \range{pages}{41}
+    \endentry
+    \entry{cornuejols1991comparison}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6097c8dac72c605fecb566085a6f17b0}{%
+           family={Cornuéjols},
+           familyi={C\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c485d886d4d123dbe33573d950430de0}{%
+           family={Sridharan},
+           familyi={S\bibinitperiod},
+           given={Ranjani},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bc21b7ddfa8545038103a69cf71d74a5}{%
+           family={Thizy},
+           familyi={T\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e116d48cf89770ede1d1317922557d58}
+      \strng{fullhash}{e116d48cf89770ede1d1317922557d58}
+      \strng{bibnamehash}{e116d48cf89770ede1d1317922557d58}
+      \strng{authorbibnamehash}{e116d48cf89770ede1d1317922557d58}
+      \strng{authornamehash}{e116d48cf89770ede1d1317922557d58}
+      \strng{authorfullhash}{e116d48cf89770ede1d1317922557d58}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European journal of operational research}
+      \field{number}{3}
+      \field{title}{A comparison of heuristics and relaxations for the capacitated plant location problem}
+      \field{volume}{50}
+      \field{year}{1991}
+      \field{pages}{280\bibrangedash 297}
+      \range{pages}{18}
+    \endentry
+    \entry{sub_national_electricity_consumption}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=0b3b05e8a2a37262bbc725f43914ec8e}{%
+           family={Energy\bibnamedelima Security},
+           familyi={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Department},
+           giveni={D\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+        {{hash=349b55343024691fd58fdec0635eb3f6}{%
+           family={Zero},
+           familyi={Z\bibinitperiod},
+           given={Net},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{95c3c96fae4f5e7e8d90abd58fa21a22}
+      \strng{fullhash}{95c3c96fae4f5e7e8d90abd58fa21a22}
+      \strng{bibnamehash}{95c3c96fae4f5e7e8d90abd58fa21a22}
+      \strng{authorbibnamehash}{95c3c96fae4f5e7e8d90abd58fa21a22}
+      \strng{authornamehash}{95c3c96fae4f5e7e8d90abd58fa21a22}
+      \strng{authorfullhash}{95c3c96fae4f5e7e8d90abd58fa21a22}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.gov.uk/government/statistics/regional-and-local-authority-electricity-consumption-statistics}
+      \field{title}{Regional and local authority electricity consumption statistics}
+      \field{year}{2024}
+    \endentry
+    \entry{nalley2022annual}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a8f2d935c3ab80cd7392657e33cdd1ad}{%
+           family={Nalley},
+           familyi={N\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d5fa7eb4f2c9c918ce089228138d12a6}{%
+           family={LaRose},
+           familyi={L\bibinitperiod},
+           given={Angelina},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5ed4f4821510f58d7e31710a350bf7e}
+      \strng{fullhash}{b5ed4f4821510f58d7e31710a350bf7e}
+      \strng{bibnamehash}{b5ed4f4821510f58d7e31710a350bf7e}
+      \strng{authorbibnamehash}{b5ed4f4821510f58d7e31710a350bf7e}
+      \strng{authornamehash}{b5ed4f4821510f58d7e31710a350bf7e}
+      \strng{authorfullhash}{b5ed4f4821510f58d7e31710a350bf7e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy Information Agency}
+      \field{title}{Annual energy outlook 2022 (AEO2022)}
+      \field{volume}{23}
+      \field{year}{2022}
+    \endentry
+    \entry{irena2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=794db2a00f0df8f75983760ed3aa93cc}{%
+           family={Agency},
+           familyi={A\bibinitperiod},
+           given={International\bibnamedelimb Renewable\bibnamedelima Energy},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{794db2a00f0df8f75983760ed3aa93cc}
+      \strng{fullhash}{794db2a00f0df8f75983760ed3aa93cc}
+      \strng{bibnamehash}{794db2a00f0df8f75983760ed3aa93cc}
+      \strng{authorbibnamehash}{794db2a00f0df8f75983760ed3aa93cc}
+      \strng{authornamehash}{794db2a00f0df8f75983760ed3aa93cc}
+      \strng{authorfullhash}{794db2a00f0df8f75983760ed3aa93cc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Renewable Power Generation Costs in 2020}
+      \field{year}{2021}
+    \endentry
+    \entry{desantis2021cost}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9ede91579399299bb1d75bc230b77733}{%
+           family={DeSantis},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8230e23aa05ce0f4143842d6c41b92ca}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Brian\bibnamedelima D},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c726a04d0cde62f10569e9741f8ebd01}{%
+           family={Houchins},
+           familyi={H\bibinitperiod},
+           given={Cassidy},
+           giveni={C\bibinitperiod}}}%
+        {{hash=63a986b159538b982064377c6a51b074}{%
+           family={Saur},
+           familyi={S\bibinitperiod},
+           given={Genevieve},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9da9b3f7d722c80e78e4b851a1f72838}{%
+           family={Lyubovsky},
+           familyi={L\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{69359de33119f65bbecdae0288a7d069}
+      \strng{fullhash}{b003122ab3455ec35515574b4dc2b47c}
+      \strng{bibnamehash}{69359de33119f65bbecdae0288a7d069}
+      \strng{authorbibnamehash}{69359de33119f65bbecdae0288a7d069}
+      \strng{authornamehash}{69359de33119f65bbecdae0288a7d069}
+      \strng{authorfullhash}{b003122ab3455ec35515574b4dc2b47c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IScience}
+      \field{number}{12}
+      \field{title}{Cost of long-distance energy transmission by different carriers}
+      \field{volume}{24}
+      \field{year}{2021}
+    \endentry
+    \entry{bynum2021pyomo}{book}{}
+      \name{author}{8}{}{%
+        {{hash=fe133d5b71e8c526ed170e6242dd8844}{%
+           family={Bynum},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=6a817c5a7f736cf5013ed3734d97eb44}{%
+           family={Hackebeil},
+           familyi={H\bibinitperiod},
+           given={Gabriel\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bc874e1729ad1546f15a50a5d5781523}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=fe4330a8eb741cb60176c01236ec044f}{%
+           family={Laird},
+           familyi={L\bibinitperiod},
+           given={Carl\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=0b6126c51097470676f5fc7c4fbf9894}{%
+           family={Nicholson},
+           familyi={N\bibinitperiod},
+           given={Bethany\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=56a744a01a7a808030086b81758a6a4c}{%
+           family={Siirola},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=674ebab2a61476821ad4b4bcd4d9c524}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=1968e7a8afc0a428e3d702a8ee380e73}{%
+           family={Woodruff},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{1319c5d6a1754893dacf6941fb1a653e}
+      \strng{fullhash}{d5d06442967f23e5ab296ef9fc179116}
+      \strng{bibnamehash}{1319c5d6a1754893dacf6941fb1a653e}
+      \strng{authorbibnamehash}{1319c5d6a1754893dacf6941fb1a653e}
+      \strng{authornamehash}{1319c5d6a1754893dacf6941fb1a653e}
+      \strng{authorfullhash}{d5d06442967f23e5ab296ef9fc179116}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Third}
+      \field{title}{Pyomo--optimization modeling in python}
+      \field{volume}{67}
+      \field{year}{2021}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

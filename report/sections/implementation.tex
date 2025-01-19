@@ -1,0 +1,6 @@
+The ESLP and LR Heuristic were both implemented in Pyomo \cite{bynum2021pyomo} 
+and solved using the gurobi solver with its default parameters. Initialising the $\lambda$ with $0$ 
+resulted in the best results when testing over a grid search, likely because it allowed the LR ESLP 
+exploratory freedom that the subgradients could then incrementally adjust.
+The option to impose a big M constraint term was also included, although fully investigating the impact of using this wasn't fully investigated in this project.
+The complete code can be found at: \href{https://github.com/intimantripp/UK_RenewableEnergy_CFLP}{https://github.com/intimantripp/UK\_RenewableEnergy\_CFLP}

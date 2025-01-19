@@ -1,0 +1,3152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5aa314c02ecc6183a461f1ef318f20d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    test title for now
+    
+            <div class="folium-map" id="map_5aa314c02ecc6183a461f1ef318f20d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5aa314c02ecc6183a461f1ef318f20d0 = L.map(
+                "map_5aa314c02ecc6183a461f1ef318f20d0",
+                {
+                    center: [53.9819, -2.5421],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": null,
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f14ec23e42899b6cd780ccb9f607db24 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f14ec23e42899b6cd780ccb9f607db24.addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var marker_cluster_a3dcebc44fc3e02fb77fe6c96a3feba5 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_a3dcebc44fc3e02fb77fe6c96a3feba5.addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var marker_da55c39e2b3cbf74f93fbd1b66b00569 = L.marker(
+                [57.14365148733438, -4.659201832864169],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_67fd13d4591c0266839a2f97ee13eca9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_da55c39e2b3cbf74f93fbd1b66b00569.setIcon(icon_67fd13d4591c0266839a2f97ee13eca9);
+        
+    
+        var popup_1298697fe0f6c17c8923e0cf6d5e4001 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e0c2d01c154fad2aabf4cd9912fa9cf9 = $(`<div id="html_e0c2d01c154fad2aabf4cd9912fa9cf9" style="width: 100.0%; height: 100.0%;">Supply Site: Glendoe Hydro Scheme</div>`)[0];
+                popup_1298697fe0f6c17c8923e0cf6d5e4001.setContent(html_e0c2d01c154fad2aabf4cd9912fa9cf9);
+            
+        
+
+        marker_da55c39e2b3cbf74f93fbd1b66b00569.bindPopup(popup_1298697fe0f6c17c8923e0cf6d5e4001)
+        ;
+
+        
+    
+    
+            var marker_c93cfbab3b2dea45b45fee38b5d9d03f = L.marker(
+                [56.82905803844323, -5.07259036002599],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_ce6370ef11a3339f2e0169b3a2b90e05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c93cfbab3b2dea45b45fee38b5d9d03f.setIcon(icon_ce6370ef11a3339f2e0169b3a2b90e05);
+        
+    
+        var popup_6f2dd45a7150e9d16f7ce5f952f79961 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_cb931cfd25c3935130c7a1197bc32975 = $(`<div id="html_cb931cfd25c3935130c7a1197bc32975" style="width: 100.0%; height: 100.0%;">Supply Site: Lochaber</div>`)[0];
+                popup_6f2dd45a7150e9d16f7ce5f952f79961.setContent(html_cb931cfd25c3935130c7a1197bc32975);
+            
+        
+
+        marker_c93cfbab3b2dea45b45fee38b5d9d03f.bindPopup(popup_6f2dd45a7150e9d16f7ce5f952f79961)
+        ;
+
+        
+    
+    
+            var marker_ab55bf119d86eb76a827df22688c9588 = L.marker(
+                [56.44313898606738, -1.4664020168914331],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_dff20952aceacb3a42d1824acfb0a42e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ab55bf119d86eb76a827df22688c9588.setIcon(icon_dff20952aceacb3a42d1824acfb0a42e);
+        
+    
+        var popup_e6fe40a2c1b7bbc71092f249c0e6dbdf = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_b0f85a7fc8cc275a5e187d05b9cb3fcf = $(`<div id="html_b0f85a7fc8cc275a5e187d05b9cb3fcf" style="width: 100.0%; height: 100.0%;">Supply Site: Berwick Bank Offshore Wind Farm</div>`)[0];
+                popup_e6fe40a2c1b7bbc71092f249c0e6dbdf.setContent(html_b0f85a7fc8cc275a5e187d05b9cb3fcf);
+            
+        
+
+        marker_ab55bf119d86eb76a827df22688c9588.bindPopup(popup_e6fe40a2c1b7bbc71092f249c0e6dbdf)
+        ;
+
+        
+    
+    
+            var marker_225a4501f152cf3a3ab3c55f34db1498 = L.marker(
+                [56.70639527623697, -4.02123890962024],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_561804de5bf09dd229a4fea2ac04b53d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_225a4501f152cf3a3ab3c55f34db1498.setIcon(icon_561804de5bf09dd229a4fea2ac04b53d);
+        
+    
+        var popup_aa68a48ba0f5df14d202e58b10ae1d84 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_08a10c5ab745648d4883328e82e41fc0 = $(`<div id="html_08a10c5ab745648d4883328e82e41fc0" style="width: 100.0%; height: 100.0%;">Supply Site: Tummel Bridge Power Station - Hydro Plant</div>`)[0];
+                popup_aa68a48ba0f5df14d202e58b10ae1d84.setContent(html_08a10c5ab745648d4883328e82e41fc0);
+            
+        
+
+        marker_225a4501f152cf3a3ab3c55f34db1498.bindPopup(popup_aa68a48ba0f5df14d202e58b10ae1d84)
+        ;
+
+        
+    
+    
+            var marker_4c57c500c30d61c3d5314ba318285310 = L.marker(
+                [57.20163354147986, -4.721325142179416],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_30d0b234558f1a6879eadb85a99ec3c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c57c500c30d61c3d5314ba318285310.setIcon(icon_30d0b234558f1a6879eadb85a99ec3c3);
+        
+    
+        var popup_4fceb711cfc41e655402c2315669c056 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_97fcd0fab4117b6a1bc717ef95dc0860 = $(`<div id="html_97fcd0fab4117b6a1bc717ef95dc0860" style="width: 100.0%; height: 100.0%;">Supply Site: Great Glen Scheme</div>`)[0];
+                popup_4fceb711cfc41e655402c2315669c056.setContent(html_97fcd0fab4117b6a1bc717ef95dc0860);
+            
+        
+
+        marker_4c57c500c30d61c3d5314ba318285310.bindPopup(popup_4fceb711cfc41e655402c2315669c056)
+        ;
+
+        
+    
+    
+            var marker_7ea22b9b271a98155defee503131473e = L.marker(
+                [53.19116334212361, -3.842614072014707],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_2df23800c10bfe1497229dce94185a74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7ea22b9b271a98155defee503131473e.setIcon(icon_2df23800c10bfe1497229dce94185a74);
+        
+    
+        var popup_06ce4aee7f436c30517183915a2bf38e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_89677eab3246550355bb35fd3d2767a2 = $(`<div id="html_89677eab3246550355bb35fd3d2767a2" style="width: 100.0%; height: 100.0%;">Supply Site: Dolgarrog</div>`)[0];
+                popup_06ce4aee7f436c30517183915a2bf38e.setContent(html_89677eab3246550355bb35fd3d2767a2);
+            
+        
+
+        marker_7ea22b9b271a98155defee503131473e.bindPopup(popup_06ce4aee7f436c30517183915a2bf38e)
+        ;
+
+        
+    
+    
+            var marker_766c819df701e4881258e2f9e557ccb4 = L.marker(
+                [53.68154166355047, 1.4207395028468657],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_4444db9e39f43fa8cdfcdab5a5c72d4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_766c819df701e4881258e2f9e557ccb4.setIcon(icon_4444db9e39f43fa8cdfcdab5a5c72d4a);
+        
+    
+        var popup_b178f746cc548e525f22efd5a119311f = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_174f7dc58468545af28a494838034d0e = $(`<div id="html_174f7dc58468545af28a494838034d0e" style="width: 100.0%; height: 100.0%;">Supply Site: Hornsea 3</div>`)[0];
+                popup_b178f746cc548e525f22efd5a119311f.setContent(html_174f7dc58468545af28a494838034d0e);
+            
+        
+
+        marker_766c819df701e4881258e2f9e557ccb4.bindPopup(popup_b178f746cc548e525f22efd5a119311f)
+        ;
+
+        
+    
+    
+            var marker_4043848f6c0ba44b54d9ff32b4deb358 = L.marker(
+                [52.61956874551564, 2.551957397523468],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_8e5ab76032a2368ce5779c49da4b3c92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4043848f6c0ba44b54d9ff32b4deb358.setIcon(icon_8e5ab76032a2368ce5779c49da4b3c92);
+        
+    
+        var popup_9c0020c36cb3669bbb6c7211448bb076 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e25cb897d6ce57bf957fcece41dd7e6e = $(`<div id="html_e25cb897d6ce57bf957fcece41dd7e6e" style="width: 100.0%; height: 100.0%;">Supply Site: The East Anglia Array - Norfolk Vanguard</div>`)[0];
+                popup_9c0020c36cb3669bbb6c7211448bb076.setContent(html_e25cb897d6ce57bf957fcece41dd7e6e);
+            
+        
+
+        marker_4043848f6c0ba44b54d9ff32b4deb358.bindPopup(popup_9c0020c36cb3669bbb6c7211448bb076)
+        ;
+
+        
+    
+    
+            var marker_03ab834d379153764a0ee5ef1d147c64 = L.marker(
+                [53.68154166355047, 1.4207395028468657],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_b31f06137c6346ee7db0e3936db4c17d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_03ab834d379153764a0ee5ef1d147c64.setIcon(icon_b31f06137c6346ee7db0e3936db4c17d);
+        
+    
+        var popup_90ed83f0a655b35850dfbe12f7f7e609 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_50a0f0839a76c850cfcba715456c10a2 = $(`<div id="html_50a0f0839a76c850cfcba715456c10a2" style="width: 100.0%; height: 100.0%;">Supply Site: Hornsea 4</div>`)[0];
+                popup_90ed83f0a655b35850dfbe12f7f7e609.setContent(html_50a0f0839a76c850cfcba715456c10a2);
+            
+        
+
+        marker_03ab834d379153764a0ee5ef1d147c64.bindPopup(popup_90ed83f0a655b35850dfbe12f7f7e609)
+        ;
+
+        
+    
+    
+            var marker_281c2809132112f549070c7673bed92e = L.marker(
+                [55.96733662025413, 1.6679209639066117],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_04892a71f08e642802f57bc4f9decbdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_281c2809132112f549070c7673bed92e.setIcon(icon_04892a71f08e642802f57bc4f9decbdb);
+        
+    
+        var popup_dddfdcba415e173db12cf490b9489a3e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_fc6991e3a845d022ebcabf7240649d71 = $(`<div id="html_fc6991e3a845d022ebcabf7240649d71" style="width: 100.0%; height: 100.0%;">Supply Site: Dogger Bank A & B (was Creyke Beck A & B)</div>`)[0];
+                popup_dddfdcba415e173db12cf490b9489a3e.setContent(html_fc6991e3a845d022ebcabf7240649d71);
+            
+        
+
+        marker_281c2809132112f549070c7673bed92e.bindPopup(popup_dddfdcba415e173db12cf490b9489a3e)
+        ;
+
+        
+    
+    
+            var marker_55e1b3cb2d50bce77c63f7e49f597707 = L.marker(
+                [58.86297071852759, -3.914167554728187],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_f19c1333abb82966214a89fd93ef46e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_55e1b3cb2d50bce77c63f7e49f597707.setIcon(icon_f19c1333abb82966214a89fd93ef46e3);
+        
+    
+        var popup_ffa1f9771653388d0e80e5bc595ed10b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c9425d87d69463d38fc5301c7c04b11a = $(`<div id="html_c9425d87d69463d38fc5301c7c04b11a" style="width: 100.0%; height: 100.0%;">Supply Site: West of Orkney Wind Farm</div>`)[0];
+                popup_ffa1f9771653388d0e80e5bc595ed10b.setContent(html_c9425d87d69463d38fc5301c7c04b11a);
+            
+        
+
+        marker_55e1b3cb2d50bce77c63f7e49f597707.bindPopup(popup_ffa1f9771653388d0e80e5bc595ed10b)
+        ;
+
+        
+    
+    
+            var marker_aa0397fa8f56d89bb75aa29243b17e65 = L.marker(
+                [57.45744162229028, -4.545320696982774],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_ae4ad80cfe72f4bb2f33628058cedbc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aa0397fa8f56d89bb75aa29243b17e65.setIcon(icon_ae4ad80cfe72f4bb2f33628058cedbc5);
+        
+    
+        var popup_b535cc061d0842367b56e329e2506e5d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0da933391adca5d4dbdb53233a99c16a = $(`<div id="html_0da933391adca5d4dbdb53233a99c16a" style="width: 100.0%; height: 100.0%;">Supply Site: Aigas</div>`)[0];
+                popup_b535cc061d0842367b56e329e2506e5d.setContent(html_0da933391adca5d4dbdb53233a99c16a);
+            
+        
+
+        marker_aa0397fa8f56d89bb75aa29243b17e65.bindPopup(popup_b535cc061d0842367b56e329e2506e5d)
+        ;
+
+        
+    
+    
+            var marker_5a9982009f9c337b18cc02d21024f238 = L.marker(
+                [57.46322997064859, -4.512122155248194],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_3d04c892834e70ebf18f98a800fdf5e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5a9982009f9c337b18cc02d21024f238.setIcon(icon_3d04c892834e70ebf18f98a800fdf5e1);
+        
+    
+        var popup_ffc068fe0bad28403d8ad978f68b92b0 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9ec00571dabe309e5028e812e76052a9 = $(`<div id="html_9ec00571dabe309e5028e812e76052a9" style="width: 100.0%; height: 100.0%;">Supply Site: Kilmorack</div>`)[0];
+                popup_ffc068fe0bad28403d8ad978f68b92b0.setContent(html_9ec00571dabe309e5028e812e76052a9);
+            
+        
+
+        marker_5a9982009f9c337b18cc02d21024f238.bindPopup(popup_ffc068fe0bad28403d8ad978f68b92b0)
+        ;
+
+        
+    
+    
+            var marker_a84e85d2893903bb3c9bd429ce177a15 = L.marker(
+                [57.152757693371576, -4.93197010045688],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_799ab373b5ebdf407f9afef3d5b106c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a84e85d2893903bb3c9bd429ce177a15.setIcon(icon_799ab373b5ebdf407f9afef3d5b106c7);
+        
+    
+        var popup_52f9d733f546a34ef258bdabf7e26309 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_d09a61d2afba70c77a5fbf11095b92ee = $(`<div id="html_d09a61d2afba70c77a5fbf11095b92ee" style="width: 100.0%; height: 100.0%;">Supply Site: Ceannacroc</div>`)[0];
+                popup_52f9d733f546a34ef258bdabf7e26309.setContent(html_d09a61d2afba70c77a5fbf11095b92ee);
+            
+        
+
+        marker_a84e85d2893903bb3c9bd429ce177a15.bindPopup(popup_52f9d733f546a34ef258bdabf7e26309)
+        ;
+
+        
+    
+    
+            var marker_2cde428630928b14022e9bd6e4ef005f = L.marker(
+                [57.07213976598468, -4.77403940223176],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_8a1b8040d943aab8f410c4065fbb7a40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2cde428630928b14022e9bd6e4ef005f.setIcon(icon_8a1b8040d943aab8f410c4065fbb7a40);
+        
+    
+        var popup_86caf0d029534b0c205214f6d1f09b52 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_5aec48055b8b2332d90311869e17718c = $(`<div id="html_5aec48055b8b2332d90311869e17718c" style="width: 100.0%; height: 100.0%;">Supply Site: Invergarry</div>`)[0];
+                popup_86caf0d029534b0c205214f6d1f09b52.setContent(html_5aec48055b8b2332d90311869e17718c);
+            
+        
+
+        marker_2cde428630928b14022e9bd6e4ef005f.bindPopup(popup_86caf0d029534b0c205214f6d1f09b52)
+        ;
+
+        
+    
+    
+            var marker_8b3b1a3170476ff15fc3fae6deda1891 = L.marker(
+                [56.71457266434061, -4.963405699129758],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_efc5cfeb1facea1d6f5924909869407c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8b3b1a3170476ff15fc3fae6deda1891.setIcon(icon_efc5cfeb1facea1d6f5924909869407c);
+        
+    
+        var popup_0cffad0cf850d330aeeb5bc4b70f7789 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_604a39ad8105113d530e9424189d291e = $(`<div id="html_604a39ad8105113d530e9424189d291e" style="width: 100.0%; height: 100.0%;">Supply Site: Kinlochleven Hydro Power Station</div>`)[0];
+                popup_0cffad0cf850d330aeeb5bc4b70f7789.setContent(html_604a39ad8105113d530e9424189d291e);
+            
+        
+
+        marker_8b3b1a3170476ff15fc3fae6deda1891.bindPopup(popup_0cffad0cf850d330aeeb5bc4b70f7789)
+        ;
+
+        
+    
+    
+            var marker_8bf63bec3f932ebe3e6e6d738cd27a95 = L.marker(
+                [57.52942404889025, -4.558523807901318],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_462266c0580e7e8c6e89ba9811b55c6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8bf63bec3f932ebe3e6e6d738cd27a95.setIcon(icon_462266c0580e7e8c6e89ba9811b55c6b);
+        
+    
+        var popup_fd5bb96990108bc02d34aa9b60680502 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_63292f27613391dddf7bf6cd187ae610 = $(`<div id="html_63292f27613391dddf7bf6cd187ae610" style="width: 100.0%; height: 100.0%;">Supply Site: Orrin</div>`)[0];
+                popup_fd5bb96990108bc02d34aa9b60680502.setContent(html_63292f27613391dddf7bf6cd187ae610);
+            
+        
+
+        marker_8bf63bec3f932ebe3e6e6d738cd27a95.bindPopup(popup_fd5bb96990108bc02d34aa9b60680502)
+        ;
+
+        
+    
+    
+            var marker_8104631952e4f23cedc31b297ea28d9c = L.marker(
+                [53.635197347991806, -3.8316944570257623],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_24389f64479bf881c7bd895fb8762d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8104631952e4f23cedc31b297ea28d9c.setIcon(icon_24389f64479bf881c7bd895fb8762d1e);
+        
+    
+        var popup_c17bb0fdaa3a340b53ff9f213d7d3f9b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_f6eec7a9ab3b6969fa44b0dd84c683a5 = $(`<div id="html_f6eec7a9ab3b6969fa44b0dd84c683a5" style="width: 100.0%; height: 100.0%;">Supply Site: Mona Offshore Wind Farm</div>`)[0];
+                popup_c17bb0fdaa3a340b53ff9f213d7d3f9b.setContent(html_f6eec7a9ab3b6969fa44b0dd84c683a5);
+            
+        
+
+        marker_8104631952e4f23cedc31b297ea28d9c.bindPopup(popup_c17bb0fdaa3a340b53ff9f213d7d3f9b)
+        ;
+
+        
+    
+    
+            var marker_dd589daff2408802fffbe33a51cea35a = L.marker(
+                [53.40091018042504, 1.6290066479330905],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_fc79e7ad48ea90182d10cfc9a0f840d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dd589daff2408802fffbe33a51cea35a.setIcon(icon_fc79e7ad48ea90182d10cfc9a0f840d1);
+        
+    
+        var popup_e5877dae44368951f06730d626f1026e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9c1f6dec87e8be0f5457068c4e00dfeb = $(`<div id="html_9c1f6dec87e8be0f5457068c4e00dfeb" style="width: 100.0%; height: 100.0%;">Supply Site: Outer Dowsing Offshore Wind Farm</div>`)[0];
+                popup_e5877dae44368951f06730d626f1026e.setContent(html_9c1f6dec87e8be0f5457068c4e00dfeb);
+            
+        
+
+        marker_dd589daff2408802fffbe33a51cea35a.bindPopup(popup_e5877dae44368951f06730d626f1026e)
+        ;
+
+        
+    
+    
+            var marker_660f3f44fdad511a371e60e874b1dd95 = L.marker(
+                [56.69910546477056, -3.740558586143748],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_cb8bfcbed8ce4a29af48001c5c14d7cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_660f3f44fdad511a371e60e874b1dd95.setIcon(icon_cb8bfcbed8ce4a29af48001c5c14d7cd);
+        
+    
+        var popup_8761dcd0965b440ca96b4a7a280a75aa = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ce50f00732bd96018ba25b7885203774 = $(`<div id="html_ce50f00732bd96018ba25b7885203774" style="width: 100.0%; height: 100.0%;">Supply Site: Pitlochry</div>`)[0];
+                popup_8761dcd0965b440ca96b4a7a280a75aa.setContent(html_ce50f00732bd96018ba25b7885203774);
+            
+        
+
+        marker_660f3f44fdad511a371e60e874b1dd95.bindPopup(popup_8761dcd0965b440ca96b4a7a280a75aa)
+        ;
+
+        
+    
+    
+            var marker_76659b6003d94c7fb8c5eff958517999 = L.marker(
+                [57.5539962512424, -4.598362869019035],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_9e3c79a719f6411afa96b36aef1831a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_76659b6003d94c7fb8c5eff958517999.setIcon(icon_9e3c79a719f6411afa96b36aef1831a4);
+        
+    
+        var popup_2e5613481b878e9cf64e8188b2ff5472 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ca668571c1e6d5593491e738a215feeb = $(`<div id="html_ca668571c1e6d5593491e738a215feeb" style="width: 100.0%; height: 100.0%;">Supply Site: Tor Achilty</div>`)[0];
+                popup_2e5613481b878e9cf64e8188b2ff5472.setContent(html_ca668571c1e6d5593491e738a215feeb);
+            
+        
+
+        marker_76659b6003d94c7fb8c5eff958517999.bindPopup(popup_2e5613481b878e9cf64e8188b2ff5472)
+        ;
+
+        
+    
+    
+            var marker_26234c4162d94cd16bce36266d342357 = L.marker(
+                [57.22024508224629, -4.647401608343324],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_eae2b160c0a744ef3b30de1af96417a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_26234c4162d94cd16bce36266d342357.setIcon(icon_eae2b160c0a744ef3b30de1af96417a8);
+        
+    
+        var popup_e7273e4e42f5d0cc615fa605d2c7f81a = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_2445a7da4a2a005cc6b25d870206510f = $(`<div id="html_2445a7da4a2a005cc6b25d870206510f" style="width: 100.0%; height: 100.0%;">Supply Site: Livishie</div>`)[0];
+                popup_e7273e4e42f5d0cc615fa605d2c7f81a.setContent(html_2445a7da4a2a005cc6b25d870206510f);
+            
+        
+
+        marker_26234c4162d94cd16bce36266d342357.bindPopup(popup_e7273e4e42f5d0cc615fa605d2c7f81a)
+        ;
+
+        
+    
+    
+            var marker_c5b4d1b01cd1f840f1ac2df5b55c0269 = L.marker(
+                [52.13696213020821, 2.172796159006265],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_1d14799672968b6b5bce347c625f677d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c5b4d1b01cd1f840f1ac2df5b55c0269.setIcon(icon_1d14799672968b6b5bce347c625f677d);
+        
+    
+        var popup_d1dd248b826ecc9f75f294ce37348dfd = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_00b6e7fdd22e70dbdfa1df8469c4d4a9 = $(`<div id="html_00b6e7fdd22e70dbdfa1df8469c4d4a9" style="width: 100.0%; height: 100.0%;">Supply Site: East Anglia 3 (EA 3)</div>`)[0];
+                popup_d1dd248b826ecc9f75f294ce37348dfd.setContent(html_00b6e7fdd22e70dbdfa1df8469c4d4a9);
+            
+        
+
+        marker_c5b4d1b01cd1f840f1ac2df5b55c0269.bindPopup(popup_d1dd248b826ecc9f75f294ce37348dfd)
+        ;
+
+        
+    
+    
+            var marker_bfd6aae2822994bc88ff5242ce8573bc = L.marker(
+                [52.61956874551564, 2.551957397523468],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_a02494e05a604365b2e1e4d0cf870a5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bfd6aae2822994bc88ff5242ce8573bc.setIcon(icon_a02494e05a604365b2e1e4d0cf870a5f);
+        
+    
+        var popup_848b25d77a52dc1372c4a3eb8d7684db = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_5488be17f66e20058576cca728e99ce0 = $(`<div id="html_5488be17f66e20058576cca728e99ce0" style="width: 100.0%; height: 100.0%;">Supply Site: The East Anglia Array - Norfolk Boreas</div>`)[0];
+                popup_848b25d77a52dc1372c4a3eb8d7684db.setContent(html_5488be17f66e20058576cca728e99ce0);
+            
+        
+
+        marker_bfd6aae2822994bc88ff5242ce8573bc.bindPopup(popup_848b25d77a52dc1372c4a3eb8d7684db)
+        ;
+
+        
+    
+    
+            var marker_35af65fe1a049abbf94f759971b41f07 = L.marker(
+                [55.20999299189536, 2.3299985915381063],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_27370714e1cbf03cd4af7c10447c374f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_35af65fe1a049abbf94f759971b41f07.setIcon(icon_27370714e1cbf03cd4af7c10447c374f);
+        
+    
+        var popup_bf97b4bd366ff931830e71a2a86c24ac = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c757d2da9a74dcbbe96ef959a45e9a94 = $(`<div id="html_c757d2da9a74dcbbe96ef959a45e9a94" style="width: 100.0%; height: 100.0%;">Supply Site: Sofia (Teesside B)</div>`)[0];
+                popup_bf97b4bd366ff931830e71a2a86c24ac.setContent(html_c757d2da9a74dcbbe96ef959a45e9a94);
+            
+        
+
+        marker_35af65fe1a049abbf94f759971b41f07.bindPopup(popup_bf97b4bd366ff931830e71a2a86c24ac)
+        ;
+
+        
+    
+    
+            var marker_0a362597c51d28f4d719653a55f662b0 = L.marker(
+                [53.95999818095857, 1.53998641788459],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_59b98e13559182583bad885f4d1b4f8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0a362597c51d28f4d719653a55f662b0.setIcon(icon_59b98e13559182583bad885f4d1b4f8c);
+        
+    
+        var popup_d4f63edf134daac29a4143e096a2b022 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_4fe2d97a66a3f9853931554e92dfddd2 = $(`<div id="html_4fe2d97a66a3f9853931554e92dfddd2" style="width: 100.0%; height: 100.0%;">Supply Site: Hornsea 2 - Optimus and Breesea</div>`)[0];
+                popup_d4f63edf134daac29a4143e096a2b022.setContent(html_4fe2d97a66a3f9853931554e92dfddd2);
+            
+        
+
+        marker_0a362597c51d28f4d719653a55f662b0.bindPopup(popup_d4f63edf134daac29a4143e096a2b022)
+        ;
+
+        
+    
+    
+            var marker_7367a9dda6422dcdf2b82b447ecb8dee = L.marker(
+                [53.68154166355047, 1.4207395028468657],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_50c7f45ecba72e0fcfed0b0d18ba820f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7367a9dda6422dcdf2b82b447ecb8dee.setIcon(icon_50c7f45ecba72e0fcfed0b0d18ba820f);
+        
+    
+        var popup_142ced8171227dfc39b8eadd61da2554 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_7d63c21d30c810917e73c8e1ece26b8f = $(`<div id="html_7d63c21d30c810917e73c8e1ece26b8f" style="width: 100.0%; height: 100.0%;">Supply Site: Hornsea 1 - Heron & Njord</div>`)[0];
+                popup_142ced8171227dfc39b8eadd61da2554.setContent(html_7d63c21d30c810917e73c8e1ece26b8f);
+            
+        
+
+        marker_7367a9dda6422dcdf2b82b447ecb8dee.bindPopup(popup_142ced8171227dfc39b8eadd61da2554)
+        ;
+
+        
+    
+    
+            var marker_838f2236f171e1d0831e33790a924ac1 = L.marker(
+                [51.369400214714815, -4.567189248003067],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_3ccaf46dabc6bd58c882afa603bb443d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_838f2236f171e1d0831e33790a924ac1.setIcon(icon_3ccaf46dabc6bd58c882afa603bb443d);
+        
+    
+        var popup_c0f92f4438d23ec38a662632f05feb87 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_24dbb0ee5bb4cb1ee40f088ac07ab1ae = $(`<div id="html_24dbb0ee5bb4cb1ee40f088ac07ab1ae" style="width: 100.0%; height: 100.0%;">Supply Site: Atlantic Array One - Bristol Channel Zone</div>`)[0];
+                popup_c0f92f4438d23ec38a662632f05feb87.setContent(html_24dbb0ee5bb4cb1ee40f088ac07ab1ae);
+            
+        
+
+        marker_838f2236f171e1d0831e33790a924ac1.bindPopup(popup_c0f92f4438d23ec38a662632f05feb87)
+        ;
+
+        
+    
+    
+            var marker_317f378b498afc2d31cadfa8868a279e = L.marker(
+                [55.20999299189536, 2.3299985915381063],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_fc4ad18b204b5ebe0dea972fc414188d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_317f378b498afc2d31cadfa8868a279e.setIcon(icon_fc4ad18b204b5ebe0dea972fc414188d);
+        
+    
+        var popup_30843b162663fae453ec41f56fb34a14 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_5b07b81442741568a34d48994b650557 = $(`<div id="html_5b07b81442741568a34d48994b650557" style="width: 100.0%; height: 100.0%;">Supply Site: Dogger Bank C (was Teesside A)</div>`)[0];
+                popup_30843b162663fae453ec41f56fb34a14.setContent(html_5b07b81442741568a34d48994b650557);
+            
+        
+
+        marker_317f378b498afc2d31cadfa8868a279e.bindPopup(popup_30843b162663fae453ec41f56fb34a14)
+        ;
+
+        
+    
+    
+            var marker_5fc5c7d99ffbc2108187e46807414629 = L.marker(
+                [56.499994788542864, -2.2000046408719016],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_c2d58dee9aa7fa68fb0de33d5b32fb75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5fc5c7d99ffbc2108187e46807414629.setIcon(icon_c2d58dee9aa7fa68fb0de33d5b32fb75);
+        
+    
+        var popup_2c03854a1ddf1ece9795d6cc9efe123a = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ca2fed6f55e1ca4a51967594049ee02c = $(`<div id="html_ca2fed6f55e1ca4a51967594049ee02c" style="width: 100.0%; height: 100.0%;">Supply Site: Inch Cape</div>`)[0];
+                popup_2c03854a1ddf1ece9795d6cc9efe123a.setContent(html_ca2fed6f55e1ca4a51967594049ee02c);
+            
+        
+
+        marker_5fc5c7d99ffbc2108187e46807414629.bindPopup(popup_2c03854a1ddf1ece9795d6cc9efe123a)
+        ;
+
+        
+    
+    
+            var marker_3ec96413043e511f0d1d1f10abc9b400 = L.marker(
+                [56.63551233113348, -1.926620733768669],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_991656bfbfcf6a7bc0116c2cea634ee8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3ec96413043e511f0d1d1f10abc9b400.setIcon(icon_991656bfbfcf6a7bc0116c2cea634ee8);
+        
+    
+        var popup_70b99948afbae0031a5e23c85ca7946d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c8450d4986129f0306c7633e03a301bf = $(`<div id="html_c8450d4986129f0306c7633e03a301bf" style="width: 100.0%; height: 100.0%;">Supply Site: Seagreen</div>`)[0];
+                popup_70b99948afbae0031a5e23c85ca7946d.setContent(html_c8450d4986129f0306c7633e03a301bf);
+            
+        
+
+        marker_3ec96413043e511f0d1d1f10abc9b400.bindPopup(popup_70b99948afbae0031a5e23c85ca7946d)
+        ;
+
+        
+    
+    
+            var marker_21407aeea0ada7b0062d9b367aae075b = L.marker(
+                [56.543121025929146, -4.465143486555838],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_d5c01684b965cd112a4737049411764c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_21407aeea0ada7b0062d9b367aae075b.setIcon(icon_d5c01684b965cd112a4737049411764c);
+        
+    
+        var popup_c74e588d1ed3b0d7b0dbed593827cb5b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_613fc1e1f1a1bdfc80861b1f35c922b9 = $(`<div id="html_613fc1e1f1a1bdfc80861b1f35c922b9" style="width: 100.0%; height: 100.0%;">Supply Site: Cashlie</div>`)[0];
+                popup_c74e588d1ed3b0d7b0dbed593827cb5b.setContent(html_613fc1e1f1a1bdfc80861b1f35c922b9);
+            
+        
+
+        marker_21407aeea0ada7b0062d9b367aae075b.bindPopup(popup_c74e588d1ed3b0d7b0dbed593827cb5b)
+        ;
+
+        
+    
+    
+            var marker_7020a17f2c6439d658ee9b71c512e5f6 = L.marker(
+                [57.12599897945994, -4.421649111596153],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_859c62914956f012d05973f000a21ff1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7020a17f2c6439d658ee9b71c512e5f6.setIcon(icon_859c62914956f012d05973f000a21ff1);
+        
+    
+        var popup_c88775a6a85932981537a4d4ec2666a5 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_57ca3a4550795f8eb976d484950b10f4 = $(`<div id="html_57ca3a4550795f8eb976d484950b10f4" style="width: 100.0%; height: 100.0%;">Supply Site: Stronelarig Hydro Scheme</div>`)[0];
+                popup_c88775a6a85932981537a4d4ec2666a5.setContent(html_57ca3a4550795f8eb976d484950b10f4);
+            
+        
+
+        marker_7020a17f2c6439d658ee9b71c512e5f6.bindPopup(popup_c88775a6a85932981537a4d4ec2666a5)
+        ;
+
+        
+    
+    
+            var marker_aa0f2976d740cbaf03da4ffbbba13bed = L.marker(
+                [50.39299914215508, -1.8390081951171868],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_01831267d7809a5645f9731268ff1bfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aa0f2976d740cbaf03da4ffbbba13bed.setIcon(icon_01831267d7809a5645f9731268ff1bfc);
+        
+    
+        var popup_d2bc003a4496188e0b31872bf28dfc80 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_963f07c27f8243cb9b515d20e94312d8 = $(`<div id="html_963f07c27f8243cb9b515d20e94312d8" style="width: 100.0%; height: 100.0%;">Supply Site: Navitus Bay</div>`)[0];
+                popup_d2bc003a4496188e0b31872bf28dfc80.setContent(html_963f07c27f8243cb9b515d20e94312d8);
+            
+        
+
+        marker_aa0f2976d740cbaf03da4ffbbba13bed.bindPopup(popup_d2bc003a4496188e0b31872bf28dfc80)
+        ;
+
+        
+    
+    
+            var marker_894823300d693b7a8e0f01eb16bbc74b = L.marker(
+                [57.96732452349117, -2.7905368948373424],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_0616558b2631e34b684a475b317c64df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_894823300d693b7a8e0f01eb16bbc74b.setIcon(icon_0616558b2631e34b684a475b317c64df);
+        
+    
+        var popup_cda400385b8b3119afaa26ec554b7d88 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e429e0be37f18cbbbcb1a6425a1ddb69 = $(`<div id="html_e429e0be37f18cbbbcb1a6425a1ddb69" style="width: 100.0%; height: 100.0%;">Supply Site: Moray East</div>`)[0];
+                popup_cda400385b8b3119afaa26ec554b7d88.setContent(html_e429e0be37f18cbbbcb1a6425a1ddb69);
+            
+        
+
+        marker_894823300d693b7a8e0f01eb16bbc74b.bindPopup(popup_cda400385b8b3119afaa26ec554b7d88)
+        ;
+
+        
+    
+    
+            var marker_23654bac8a971790027e845664c79060 = L.marker(
+                [57.976830989027285, -4.583249116142376],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_b1430421eed89c6a7c7f22b7c05f6d4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_23654bac8a971790027e845664c79060.setIcon(icon_b1430421eed89c6a7c7f22b7c05f6d4e);
+        
+    
+        var popup_143359be0bd1551475d268763dcab1b4 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9a343b78171ba09cbad050ecdcf0b63c = $(`<div id="html_9a343b78171ba09cbad050ecdcf0b63c" style="width: 100.0%; height: 100.0%;">Supply Site: Cassley</div>`)[0];
+                popup_143359be0bd1551475d268763dcab1b4.setContent(html_9a343b78171ba09cbad050ecdcf0b63c);
+            
+        
+
+        marker_23654bac8a971790027e845664c79060.bindPopup(popup_143359be0bd1551475d268763dcab1b4)
+        ;
+
+        
+    
+    
+            var marker_0977b9507a2b8ba920fb0a78f13bdeda = L.marker(
+                [53.04254670694436, -4.033371510611085],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_8a5e7249709d3a7e68ab93532437131d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0977b9507a2b8ba920fb0a78f13bdeda.setIcon(icon_8a5e7249709d3a7e68ab93532437131d);
+        
+    
+        var popup_f015ebb3c73a2d7fb23c0230933256c6 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_827aacd97e37627aa043e4f0ab57ef3b = $(`<div id="html_827aacd97e37627aa043e4f0ab57ef3b" style="width: 100.0%; height: 100.0%;">Supply Site: Cwm Dyli</div>`)[0];
+                popup_f015ebb3c73a2d7fb23c0230933256c6.setContent(html_827aacd97e37627aa043e4f0ab57ef3b);
+            
+        
+
+        marker_0977b9507a2b8ba920fb0a78f13bdeda.bindPopup(popup_f015ebb3c73a2d7fb23c0230933256c6)
+        ;
+
+        
+    
+    
+            var marker_673d9e8ababca10b4f50676c93e66c41 = L.marker(
+                [52.72098899802886, 2.168707616635715],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_f2764158b0a9c4b42737dbfbab692b4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_673d9e8ababca10b4f50676c93e66c41.setIcon(icon_f2764158b0a9c4b42737dbfbab692b4e);
+        
+    
+        var popup_8bb16a47cd0ac1b44a3665f4d4b2581d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_80bfe8409db5047b860a7931a2a07616 = $(`<div id="html_80bfe8409db5047b860a7931a2a07616" style="width: 100.0%; height: 100.0%;">Supply Site: East Anglia 2 (EA 2)</div>`)[0];
+                popup_8bb16a47cd0ac1b44a3665f4d4b2581d.setContent(html_80bfe8409db5047b860a7931a2a07616);
+            
+        
+
+        marker_673d9e8ababca10b4f50676c93e66c41.bindPopup(popup_8bb16a47cd0ac1b44a3665f4d4b2581d)
+        ;
+
+        
+    
+    
+            var marker_8f243dfec1ef4d0d6150a0de88b33821 = L.marker(
+                [58.06988779060064, -3.313066434753212],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_184917fe5e530d112ed508f9db8fac76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8f243dfec1ef4d0d6150a0de88b33821.setIcon(icon_184917fe5e530d112ed508f9db8fac76);
+        
+    
+        var popup_2bd60f298b89f55b0262e7c74fc93433 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_efb15d91796f3a9553dae2baa8a8dfcb = $(`<div id="html_efb15d91796f3a9553dae2baa8a8dfcb" style="width: 100.0%; height: 100.0%;">Supply Site: Moray West Offshore Wind Farm Project</div>`)[0];
+                popup_2bd60f298b89f55b0262e7c74fc93433.setContent(html_efb15d91796f3a9553dae2baa8a8dfcb);
+            
+        
+
+        marker_8f243dfec1ef4d0d6150a0de88b33821.bindPopup(popup_2bd60f298b89f55b0262e7c74fc93433)
+        ;
+
+        
+    
+    
+            var marker_63185a26d7d6568cc666bc258e80dcb7 = L.marker(
+                [53.21227229537231, 0.8616390875533684],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_9cca4ca30dbbe51dc98dec548b822f08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_63185a26d7d6568cc666bc258e80dcb7.setIcon(icon_9cca4ca30dbbe51dc98dec548b822f08);
+        
+    
+        var popup_cd4db1a01ef2b86de3efd1bc1070aecc = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_76910bb389c8ccd3d1f70d755fadd2ba = $(`<div id="html_76910bb389c8ccd3d1f70d755fadd2ba" style="width: 100.0%; height: 100.0%;">Supply Site: Triton Knoll </div>`)[0];
+                popup_cd4db1a01ef2b86de3efd1bc1070aecc.setContent(html_76910bb389c8ccd3d1f70d755fadd2ba);
+            
+        
+
+        marker_63185a26d7d6568cc666bc258e80dcb7.bindPopup(popup_cd4db1a01ef2b86de3efd1bc1070aecc)
+        ;
+
+        
+    
+    
+            var marker_98ecf1988e217d2ff7add6f625223940 = L.marker(
+                [56.96438413467648, -4.423651773064449],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_25830abf2accdf62af38f0278aaf10ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98ecf1988e217d2ff7add6f625223940.setIcon(icon_25830abf2accdf62af38f0278aaf10ed);
+        
+    
+        var popup_5086ae3380aad7eb711fd9aefe0d71aa = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_fc4cce1d25baa8aa6259a7c042051337 = $(`<div id="html_fc4cce1d25baa8aa6259a7c042051337" style="width: 100.0%; height: 100.0%;">Supply Site: River Pattack Hydro Scheme</div>`)[0];
+                popup_5086ae3380aad7eb711fd9aefe0d71aa.setContent(html_fc4cce1d25baa8aa6259a7c042051337);
+            
+        
+
+        marker_98ecf1988e217d2ff7add6f625223940.bindPopup(popup_5086ae3380aad7eb711fd9aefe0d71aa)
+        ;
+
+        
+    
+    
+            var marker_7f712f53016686620040ce1d5ab66c8a = L.marker(
+                [52.13696213020821, 2.172796159006265],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_4eef96f262bab3246324e261b2c8201e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7f712f53016686620040ce1d5ab66c8a.setIcon(icon_4eef96f262bab3246324e261b2c8201e);
+        
+    
+        var popup_41e268b7417d632a4032fde53d48b89a = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_375c6c4430d969eb350d21c48ec98548 = $(`<div id="html_375c6c4430d969eb350d21c48ec98548" style="width: 100.0%; height: 100.0%;">Supply Site: East Anglia 1 North (EA 4)</div>`)[0];
+                popup_41e268b7417d632a4032fde53d48b89a.setContent(html_375c6c4430d969eb350d21c48ec98548);
+            
+        
+
+        marker_7f712f53016686620040ce1d5ab66c8a.bindPopup(popup_41e268b7417d632a4032fde53d48b89a)
+        ;
+
+        
+    
+    
+            var marker_78641bea0e9e3f4d98025b19f44865fa = L.marker(
+                [56.00930576754188, -5.119886166701756],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_5ae212bd9bf601e1448491501431ac79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_78641bea0e9e3f4d98025b19f44865fa.setIcon(icon_5ae212bd9bf601e1448491501431ac79);
+        
+    
+        var popup_484226ffa5f1b6f98cec4746a0a1efbf = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_1458ffb1065a689d90f78dc5a4b58048 = $(`<div id="html_1458ffb1065a689d90f78dc5a4b58048" style="width: 100.0%; height: 100.0%;">Supply Site: Striven</div>`)[0];
+                popup_484226ffa5f1b6f98cec4746a0a1efbf.setContent(html_1458ffb1065a689d90f78dc5a4b58048);
+            
+        
+
+        marker_78641bea0e9e3f4d98025b19f44865fa.bindPopup(popup_484226ffa5f1b6f98cec4746a0a1efbf)
+        ;
+
+        
+    
+    
+            var marker_4fa3b68ab0b4f64f2f69ec8428c671ff = L.marker(
+                [52.13696213020821, 2.172796159006265],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_9e5e54a068afc33105dad0dba3e6fa48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4fa3b68ab0b4f64f2f69ec8428c671ff.setIcon(icon_9e5e54a068afc33105dad0dba3e6fa48);
+        
+    
+        var popup_41b7185f21dd96fc464f6fbb8679faed = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_24a346329e437175ad6604a2ec91ad62 = $(`<div id="html_24a346329e437175ad6604a2ec91ad62" style="width: 100.0%; height: 100.0%;">Supply Site: East Anglia 1 (EA 1)</div>`)[0];
+                popup_41b7185f21dd96fc464f6fbb8679faed.setContent(html_24a346329e437175ad6604a2ec91ad62);
+            
+        
+
+        marker_4fa3b68ab0b4f64f2f69ec8428c671ff.bindPopup(popup_41b7185f21dd96fc464f6fbb8679faed)
+        ;
+
+        
+    
+    
+            var marker_99c61627b5caec3f52928f41a5aab956 = L.marker(
+                [57.32719349617855, -4.794575198063947],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_2414a35817adc08b17d6217ff035fc0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_99c61627b5caec3f52928f41a5aab956.setIcon(icon_2414a35817adc08b17d6217ff035fc0f);
+        
+    
+        var popup_14c1cfec73b7c9dfb6a2ce6b6706f2e9 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_15408e2d696ed5a1120f6fb4d8b9c718 = $(`<div id="html_15408e2d696ed5a1120f6fb4d8b9c718" style="width: 100.0%; height: 100.0%;">Supply Site: Fasnakyle Hydro Extension</div>`)[0];
+                popup_14c1cfec73b7c9dfb6a2ce6b6706f2e9.setContent(html_15408e2d696ed5a1120f6fb4d8b9c718);
+            
+        
+
+        marker_99c61627b5caec3f52928f41a5aab956.bindPopup(popup_14c1cfec73b7c9dfb6a2ce6b6706f2e9)
+        ;
+
+        
+    
+    
+            var marker_1927b868831a7ae0ec683d54a95c97d2 = L.marker(
+                [57.78376144008739, -4.591945500487112],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_fb7600d643c1e3719816cd673a1be948 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1927b868831a7ae0ec683d54a95c97d2.setIcon(icon_fb7600d643c1e3719816cd673a1be948);
+        
+    
+        var popup_3beebadb71a151ecd5da278656610d6a = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_afa8fb36760e2d5547c732e29dff660b = $(`<div id="html_afa8fb36760e2d5547c732e29dff660b" style="width: 100.0%; height: 100.0%;">Supply Site: Kildermorie Estate</div>`)[0];
+                popup_3beebadb71a151ecd5da278656610d6a.setContent(html_afa8fb36760e2d5547c732e29dff660b);
+            
+        
+
+        marker_1927b868831a7ae0ec683d54a95c97d2.bindPopup(popup_3beebadb71a151ecd5da278656610d6a)
+        ;
+
+        
+    
+    
+            var marker_16a8b137ffd7d4043b561df17c944dfa = L.marker(
+                [54.08999466195288, -3.7400106467008327],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_d4bdee21e98f26d654bf16d44fabca01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_16a8b137ffd7d4043b561df17c944dfa.setIcon(icon_d4bdee21e98f26d654bf16d44fabca01);
+        
+    
+        var popup_da59ed8525e045be14203ee04c1be809 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c0913a64418aabe52130f93414a1e90a = $(`<div id="html_c0913a64418aabe52130f93414a1e90a" style="width: 100.0%; height: 100.0%;">Supply Site: Walney 3</div>`)[0];
+                popup_da59ed8525e045be14203ee04c1be809.setContent(html_c0913a64418aabe52130f93414a1e90a);
+            
+        
+
+        marker_16a8b137ffd7d4043b561df17c944dfa.bindPopup(popup_da59ed8525e045be14203ee04c1be809)
+        ;
+
+        
+    
+    
+            var marker_e2f1765425c918aa676faf23350fb824 = L.marker(
+                [51.621679300913954, 1.4958316372825315],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_a0ba6260494381c05d434d4be554dbf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e2f1765425c918aa676faf23350fb824.setIcon(icon_a0ba6260494381c05d434d4be554dbf8);
+        
+    
+        var popup_27457e29242458b5073b3b5cc978423c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_004ec636acd73e0e39113f27df390c57 = $(`<div id="html_004ec636acd73e0e39113f27df390c57" style="width: 100.0%; height: 100.0%;">Supply Site: London Array Phase 1</div>`)[0];
+                popup_27457e29242458b5073b3b5cc978423c.setContent(html_004ec636acd73e0e39113f27df390c57);
+            
+        
+
+        marker_e2f1765425c918aa676faf23350fb824.bindPopup(popup_27457e29242458b5073b3b5cc978423c)
+        ;
+
+        
+    
+    
+            var marker_c7c0e93dcec6bb0c6811d915524982b5 = L.marker(
+                [56.67845353213067, -4.50851265699178],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_3a0e7b544ca3ad3b0c57c5bea6af4053 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c7c0e93dcec6bb0c6811d915524982b5.setIcon(icon_3a0e7b544ca3ad3b0c57c5bea6af4053);
+        
+    
+        var popup_c0168d2a54f20b72343b58cd004e4ff0 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_4a0bf5d9e792d66c7379cf1cf38e84fd = $(`<div id="html_4a0bf5d9e792d66c7379cf1cf38e84fd" style="width: 100.0%; height: 100.0%;">Supply Site: Gaur</div>`)[0];
+                popup_c0168d2a54f20b72343b58cd004e4ff0.setContent(html_4a0bf5d9e792d66c7379cf1cf38e84fd);
+            
+        
+
+        marker_c7c0e93dcec6bb0c6811d915524982b5.bindPopup(popup_c0168d2a54f20b72343b58cd004e4ff0)
+        ;
+
+        
+    
+    
+            var marker_090d2575e7b7917f5aa3662b66c470f3 = L.marker(
+                [58.08822926265908, -2.950157205656308],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_594518c826140355afbe6655edf22371 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_090d2575e7b7917f5aa3662b66c470f3.setIcon(icon_594518c826140355afbe6655edf22371);
+        
+    
+        var popup_2dfa8d6f18a9a92c621fc4276ed4744e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_a245b05b0df0493912a861af8fe204e0 = $(`<div id="html_a245b05b0df0493912a861af8fe204e0" style="width: 100.0%; height: 100.0%;">Supply Site: Beatrice</div>`)[0];
+                popup_2dfa8d6f18a9a92c621fc4276ed4744e.setContent(html_a245b05b0df0493912a861af8fe204e0);
+            
+        
+
+        marker_090d2575e7b7917f5aa3662b66c470f3.bindPopup(popup_2dfa8d6f18a9a92c621fc4276ed4744e)
+        ;
+
+        
+    
+    
+            var marker_cluster_4493fb0d84203865ada0772172e52b89 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_4493fb0d84203865ada0772172e52b89.addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var marker_7cd9fa3614ac52e6abf45d74e068235f = L.marker(
+                [53.4071991, -2.99168],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_cafc909821da42d0a5db94ec0aa90555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7cd9fa3614ac52e6abf45d74e068235f.setIcon(icon_cafc909821da42d0a5db94ec0aa90555);
+        
+    
+        var popup_c94f4e3b77c7538b9ca91265859602b1 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_d645e505de8a153984fe71c9bfd434fe = $(`<div id="html_d645e505de8a153984fe71c9bfd434fe" style="width: 100.0%; height: 100.0%;">Demand Site: Liverpool</div>`)[0];
+                popup_c94f4e3b77c7538b9ca91265859602b1.setContent(html_d645e505de8a153984fe71c9bfd434fe);
+            
+        
+
+        marker_7cd9fa3614ac52e6abf45d74e068235f.bindPopup(popup_c94f4e3b77c7538b9ca91265859602b1)
+        ;
+
+        
+    
+    
+            var marker_01cc4d4a89f79bde83f8e6b3a34e71e9 = L.marker(
+                [53.4794892, -2.2451148],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_cf8840c4b63eddf4bf7dd444d61b3d1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_01cc4d4a89f79bde83f8e6b3a34e71e9.setIcon(icon_cf8840c4b63eddf4bf7dd444d61b3d1c);
+        
+    
+        var popup_9e20d1142e6a0266fbd157f2d30a4b63 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_153772fd133659a687c1a24fd31cdb41 = $(`<div id="html_153772fd133659a687c1a24fd31cdb41" style="width: 100.0%; height: 100.0%;">Demand Site: Manchester</div>`)[0];
+                popup_9e20d1142e6a0266fbd157f2d30a4b63.setContent(html_153772fd133659a687c1a24fd31cdb41);
+            
+        
+
+        marker_01cc4d4a89f79bde83f8e6b3a34e71e9.bindPopup(popup_9e20d1142e6a0266fbd157f2d30a4b63)
+        ;
+
+        
+    
+    
+            var marker_de834434ebbfc79327fd1016d79b2200 = L.marker(
+                [53.41893605, -2.359297161165271],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_fdbefe6f4d8f2b5c0612e1eb8bee851f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_de834434ebbfc79327fd1016d79b2200.setIcon(icon_fdbefe6f4d8f2b5c0612e1eb8bee851f);
+        
+    
+        var popup_38eb8a1222a2605d927a30da0b16bd20 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_54c5c28864a80eb585a9f11f7885a728 = $(`<div id="html_54c5c28864a80eb585a9f11f7885a728" style="width: 100.0%; height: 100.0%;">Demand Site: Trafford</div>`)[0];
+                popup_38eb8a1222a2605d927a30da0b16bd20.setContent(html_54c5c28864a80eb585a9f11f7885a728);
+            
+        
+
+        marker_de834434ebbfc79327fd1016d79b2200.bindPopup(popup_38eb8a1222a2605d927a30da0b16bd20)
+        ;
+
+        
+    
+    
+            var marker_75db4de99895c457ce44e1cc832b46ff = L.marker(
+                [53.9112323, -0.5813105],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_dc6c0ebd0b0741cceb9b9a3f5fabdde0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_75db4de99895c457ce44e1cc832b46ff.setIcon(icon_dc6c0ebd0b0741cceb9b9a3f5fabdde0);
+        
+    
+        var popup_d271604e36496bfa386b3e06b1734ade = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_55daded8b5787636093b16d888983fc9 = $(`<div id="html_55daded8b5787636093b16d888983fc9" style="width: 100.0%; height: 100.0%;">Demand Site: East Riding of Yorkshire</div>`)[0];
+                popup_d271604e36496bfa386b3e06b1734ade.setContent(html_55daded8b5787636093b16d888983fc9);
+            
+        
+
+        marker_75db4de99895c457ce44e1cc832b46ff.bindPopup(popup_d271604e36496bfa386b3e06b1734ade)
+        ;
+
+        
+    
+    
+            var marker_8161ea47342a1568a9778983bdb90e96 = L.marker(
+                [53.3806626, -1.4702278],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_43307a4e8a1226b0390ea292e6cc9150 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8161ea47342a1568a9778983bdb90e96.setIcon(icon_43307a4e8a1226b0390ea292e6cc9150);
+        
+    
+        var popup_7e9a7c099f9eb2b461cf89258a260963 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e511930a99e22d9601e95638e4787b04 = $(`<div id="html_e511930a99e22d9601e95638e4787b04" style="width: 100.0%; height: 100.0%;">Demand Site: Sheffield</div>`)[0];
+                popup_7e9a7c099f9eb2b461cf89258a260963.setContent(html_e511930a99e22d9601e95638e4787b04);
+            
+        
+
+        marker_8161ea47342a1568a9778983bdb90e96.bindPopup(popup_7e9a7c099f9eb2b461cf89258a260963)
+        ;
+
+        
+    
+    
+            var marker_df32c73f83aa673f1854a0cca61f0574 = L.marker(
+                [53.6829541, -1.4967286],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_f22c18e5f59fe7a568a87fca634e4599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_df32c73f83aa673f1854a0cca61f0574.setIcon(icon_f22c18e5f59fe7a568a87fca634e4599);
+        
+    
+        var popup_09398888787575b3a83fce5e2a2dbced = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_601fe0382bc6447ea7ca84772da03e87 = $(`<div id="html_601fe0382bc6447ea7ca84772da03e87" style="width: 100.0%; height: 100.0%;">Demand Site: Wakefield</div>`)[0];
+                popup_09398888787575b3a83fce5e2a2dbced.setContent(html_601fe0382bc6447ea7ca84772da03e87);
+            
+        
+
+        marker_df32c73f83aa673f1854a0cca61f0574.bindPopup(popup_09398888787575b3a83fce5e2a2dbced)
+        ;
+
+        
+    
+    
+            var marker_17d9ffc11379eb915025cad3003d8664 = L.marker(
+                [52.6362, -1.1331969],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_79fa4faab72fe53a214302d74e7aeeff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_17d9ffc11379eb915025cad3003d8664.setIcon(icon_79fa4faab72fe53a214302d74e7aeeff);
+        
+    
+        var popup_28206f1c92be233740ffe01370d5eea4 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_147b5ec836fa47849e289b26e35e4a33 = $(`<div id="html_147b5ec836fa47849e289b26e35e4a33" style="width: 100.0%; height: 100.0%;">Demand Site: Leicester</div>`)[0];
+                popup_28206f1c92be233740ffe01370d5eea4.setContent(html_147b5ec836fa47849e289b26e35e4a33);
+            
+        
+
+        marker_17d9ffc11379eb915025cad3003d8664.bindPopup(popup_28206f1c92be233740ffe01370d5eea4)
+        ;
+
+        
+    
+    
+            var marker_e411f4875fc1d6cf080ac9df7f6453a4 = L.marker(
+                [52.4796992, -1.9026911],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_dcbf87c526c04d5dc4482fb3d57891c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e411f4875fc1d6cf080ac9df7f6453a4.setIcon(icon_dcbf87c526c04d5dc4482fb3d57891c3);
+        
+    
+        var popup_ae49e468a001f04a95148e557ac81f85 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_3e8f32f8289931213bca1a2527be58a8 = $(`<div id="html_3e8f32f8289931213bca1a2527be58a8" style="width: 100.0%; height: 100.0%;">Demand Site: Birmingham</div>`)[0];
+                popup_ae49e468a001f04a95148e557ac81f85.setContent(html_3e8f32f8289931213bca1a2527be58a8);
+            
+        
+
+        marker_e411f4875fc1d6cf080ac9df7f6453a4.bindPopup(popup_ae49e468a001f04a95148e557ac81f85)
+        ;
+
+        
+    
+    
+            var marker_a4ad0d8da20abca7d6498107ab64bc38 = L.marker(
+                [51.54279655, -0.1624803135779896],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_77bba81b80d4c6fae23419e3edf038bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a4ad0d8da20abca7d6498107ab64bc38.setIcon(icon_77bba81b80d4c6fae23419e3edf038bd);
+        
+    
+        var popup_227eec8edb5473a2b70b0274867e9921 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_d12f195323f0e083229ab644b5806098 = $(`<div id="html_d12f195323f0e083229ab644b5806098" style="width: 100.0%; height: 100.0%;">Demand Site: Camden</div>`)[0];
+                popup_227eec8edb5473a2b70b0274867e9921.setContent(html_d12f195323f0e083229ab644b5806098);
+            
+        
+
+        marker_a4ad0d8da20abca7d6498107ab64bc38.bindPopup(popup_227eec8edb5473a2b70b0274867e9921)
+        ;
+
+        
+    
+    
+            var marker_b2cb3ff3f7657ecebb31f6fb82dae438 = L.marker(
+                [51.5425193, -0.4483349311794966],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_61682c512d55dcc3d83c1ade799e0629 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b2cb3ff3f7657ecebb31f6fb82dae438.setIcon(icon_61682c512d55dcc3d83c1ade799e0629);
+        
+    
+        var popup_644f631365849d14dd0838e9b60580f7 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0df998cac4134c3031a003a0d63a51ca = $(`<div id="html_0df998cac4134c3031a003a0d63a51ca" style="width: 100.0%; height: 100.0%;">Demand Site: Hillingdon</div>`)[0];
+                popup_644f631365849d14dd0838e9b60580f7.setContent(html_0df998cac4134c3031a003a0d63a51ca);
+            
+        
+
+        marker_b2cb3ff3f7657ecebb31f6fb82dae438.bindPopup(popup_644f631365849d14dd0838e9b60580f7)
+        ;
+
+        
+    
+    
+            var marker_f6d39415e21949c7550855d990b00d5f = L.marker(
+                [51.50379515, -0.2007893832317959],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_2c0a298388e09b44f76159546d3c50b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f6d39415e21949c7550855d990b00d5f.setIcon(icon_2c0a298388e09b44f76159546d3c50b9);
+        
+    
+        var popup_009023608339d4786aabfc3dd7fc887c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_93582567d43a90e7dbb8b6d782ca6cb3 = $(`<div id="html_93582567d43a90e7dbb8b6d782ca6cb3" style="width: 100.0%; height: 100.0%;">Demand Site: Kensington and Chelsea</div>`)[0];
+                popup_009023608339d4786aabfc3dd7fc887c.setContent(html_93582567d43a90e7dbb8b6d782ca6cb3);
+            
+        
+
+        marker_f6d39415e21949c7550855d990b00d5f.bindPopup(popup_009023608339d4786aabfc3dd7fc887c)
+        ;
+
+        
+    
+    
+            var marker_40113627be54a7fab4b54a3ccb01a585 = L.marker(
+                [51.46525455, -0.0690186332146649],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_9d33edb7f78b82652f7b2eb1f0da9c29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_40113627be54a7fab4b54a3ccb01a585.setIcon(icon_9d33edb7f78b82652f7b2eb1f0da9c29);
+        
+    
+        var popup_506b863fe483f6e6a67d9c6340da367e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9514dc7f0fffc88159934512954768e6 = $(`<div id="html_9514dc7f0fffc88159934512954768e6" style="width: 100.0%; height: 100.0%;">Demand Site: Southwark</div>`)[0];
+                popup_506b863fe483f6e6a67d9c6340da367e.setContent(html_9514dc7f0fffc88159934512954768e6);
+            
+        
+
+        marker_40113627be54a7fab4b54a3ccb01a585.bindPopup(popup_506b863fe483f6e6a67d9c6340da367e)
+        ;
+
+        
+    
+    
+            var marker_3165d122f3afa3a97e3d801992ea1f77 = L.marker(
+                [51.1288633, 1.2986686],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_459dd6494ef366cbbb249c4c1b0c4498 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3165d122f3afa3a97e3d801992ea1f77.setIcon(icon_459dd6494ef366cbbb249c4c1b0c4498);
+        
+    
+        var popup_faf4f74c3d4583bf6470e4f651cd4ba7 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_f14ea51f7d256cf29bc26d8f6a3ec8ed = $(`<div id="html_f14ea51f7d256cf29bc26d8f6a3ec8ed" style="width: 100.0%; height: 100.0%;">Demand Site: Tower Hamlets</div>`)[0];
+                popup_faf4f74c3d4583bf6470e4f651cd4ba7.setContent(html_f14ea51f7d256cf29bc26d8f6a3ec8ed);
+            
+        
+
+        marker_3165d122f3afa3a97e3d801992ea1f77.bindPopup(popup_faf4f74c3d4583bf6470e4f651cd4ba7)
+        ;
+
+        
+    
+    
+            var marker_8c564c115a386551465e6fee4f72fe69 = L.marker(
+                [51.5004439, -0.1265398],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_4d21afbf0ecb7708516b9e2bc1ea5835 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8c564c115a386551465e6fee4f72fe69.setIcon(icon_4d21afbf0ecb7708516b9e2bc1ea5835);
+        
+    
+        var popup_50b778e127991a2dd102ea33b43d7704 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9305b27c1b0e4fdb41916dc58634bb7e = $(`<div id="html_9305b27c1b0e4fdb41916dc58634bb7e" style="width: 100.0%; height: 100.0%;">Demand Site: Westminster</div>`)[0];
+                popup_50b778e127991a2dd102ea33b43d7704.setContent(html_9305b27c1b0e4fdb41916dc58634bb7e);
+            
+        
+
+        marker_8c564c115a386551465e6fee4f72fe69.bindPopup(popup_50b778e127991a2dd102ea33b43d7704)
+        ;
+
+        
+    
+    
+            var marker_f160f64a2b510ffe990750639f42a783 = L.marker(
+                [52.0406502, -0.7594092],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_8152acdce55374bde2bd4ed84f1e33c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f160f64a2b510ffe990750639f42a783.setIcon(icon_8152acdce55374bde2bd4ed84f1e33c8);
+        
+    
+        var popup_8ee47da240a9e8bc2c897310f355e769 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_02cc174f488eb1f595bd41458e6f950d = $(`<div id="html_02cc174f488eb1f595bd41458e6f950d" style="width: 100.0%; height: 100.0%;">Demand Site: Milton Keynes</div>`)[0];
+                popup_8ee47da240a9e8bc2c897310f355e769.setContent(html_02cc174f488eb1f595bd41458e6f950d);
+            
+        
+
+        marker_f160f64a2b510ffe990750639f42a783.bindPopup(popup_8ee47da240a9e8bc2c897310f355e769)
+        ;
+
+        
+    
+    
+            var marker_073ed2ae510c586d56580cb6d597c1da = L.marker(
+                [55.9533456, -3.1883749],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_d0b70c0b7b6a558327237081bb0ebc1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_073ed2ae510c586d56580cb6d597c1da.setIcon(icon_d0b70c0b7b6a558327237081bb0ebc1c);
+        
+    
+        var popup_b28ecfe5c8b1b274e9196cc9fcecf37e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_564bf3fb7d8ecebaf0e60f9cb3c2eb97 = $(`<div id="html_564bf3fb7d8ecebaf0e60f9cb3c2eb97" style="width: 100.0%; height: 100.0%;">Demand Site: City of Edinburgh</div>`)[0];
+                popup_b28ecfe5c8b1b274e9196cc9fcecf37e.setContent(html_564bf3fb7d8ecebaf0e60f9cb3c2eb97);
+            
+        
+
+        marker_073ed2ae510c586d56580cb6d597c1da.bindPopup(popup_b28ecfe5c8b1b274e9196cc9fcecf37e)
+        ;
+
+        
+    
+    
+            var marker_f803ff63547bcb69e55ebb7af1ae9db8 = L.marker(
+                [56.3333331, -3.0000001],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_0472f1b93951c654d1de45c63c3342ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f803ff63547bcb69e55ebb7af1ae9db8.setIcon(icon_0472f1b93951c654d1de45c63c3342ef);
+        
+    
+        var popup_d6968ae8ff1c84660281f5a78ddf22d8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e7d64f93ed0f4d47576cec16126ba524 = $(`<div id="html_e7d64f93ed0f4d47576cec16126ba524" style="width: 100.0%; height: 100.0%;">Demand Site: Fife</div>`)[0];
+                popup_d6968ae8ff1c84660281f5a78ddf22d8.setContent(html_e7d64f93ed0f4d47576cec16126ba524);
+            
+        
+
+        marker_f803ff63547bcb69e55ebb7af1ae9db8.bindPopup(popup_d6968ae8ff1c84660281f5a78ddf22d8)
+        ;
+
+        
+    
+    
+            var marker_0399155aefc7fcbebc99f034bdcfd1a0 = L.marker(
+                [55.85551155, -4.226230657258229],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_9dc860b6732b6c9b7ace158fe28dc310 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0399155aefc7fcbebc99f034bdcfd1a0.setIcon(icon_9dc860b6732b6c9b7ace158fe28dc310);
+        
+    
+        var popup_190e5ee14d3f5021046d25b3d91f09c9 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_dba221b5c463f08a058a53b58e6b4e62 = $(`<div id="html_dba221b5c463f08a058a53b58e6b4e62" style="width: 100.0%; height: 100.0%;">Demand Site: Glasgow City</div>`)[0];
+                popup_190e5ee14d3f5021046d25b3d91f09c9.setContent(html_dba221b5c463f08a058a53b58e6b4e62);
+            
+        
+
+        marker_0399155aefc7fcbebc99f034bdcfd1a0.bindPopup(popup_190e5ee14d3f5021046d25b3d91f09c9)
+        ;
+
+        
+    
+    
+            var marker_e237e537b124db1d5a089f7626cb12a4 = L.marker(
+                [57.5066357, -5.0038367],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_a57a612bbb3da1af86dc12f07c3112d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e237e537b124db1d5a089f7626cb12a4.setIcon(icon_a57a612bbb3da1af86dc12f07c3112d6);
+        
+    
+        var popup_c8dcf46f741dea049a71af5fdc3704cb = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_2efae1d6de522d274207eb6632222a07 = $(`<div id="html_2efae1d6de522d274207eb6632222a07" style="width: 100.0%; height: 100.0%;">Demand Site: Highland</div>`)[0];
+                popup_c8dcf46f741dea049a71af5fdc3704cb.setContent(html_2efae1d6de522d274207eb6632222a07);
+            
+        
+
+        marker_e237e537b124db1d5a089f7626cb12a4.bindPopup(popup_c8dcf46f741dea049a71af5fdc3704cb)
+        ;
+
+        
+    
+    
+            var marker_8e21d90d1104862faab8062a2fa7205e = L.marker(
+                [55.88305065, -3.946155104761104],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var icon_a4b1a2de099b2b1caeb32ec68a10d403 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e21d90d1104862faab8062a2fa7205e.setIcon(icon_a4b1a2de099b2b1caeb32ec68a10d403);
+        
+    
+        var popup_c981cf7b0ed06f341942e464f4294a25 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_7f9660d028260ed1fc70806927d130a7 = $(`<div id="html_7f9660d028260ed1fc70806927d130a7" style="width: 100.0%; height: 100.0%;">Demand Site: North Lanarkshire</div>`)[0];
+                popup_c981cf7b0ed06f341942e464f4294a25.setContent(html_7f9660d028260ed1fc70806927d130a7);
+            
+        
+
+        marker_8e21d90d1104862faab8062a2fa7205e.bindPopup(popup_c981cf7b0ed06f341942e464f4294a25)
+        ;
+
+        
+    
+    
+            var poly_line_91bfed5c0c7bcadcf8072a022da2fcde = L.polyline(
+                [[56.543121025929146, -4.465143486555838], [55.85551155, -4.226230657258229]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.7386150719012607}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_c33a33624a1385ee184ed9b1d250a42c = L.polyline(
+                [[56.543121025929146, -4.465143486555838], [55.88305065, -3.946155104761104]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6135637059551535}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_c87fb93ca5f5d0c0c8baa9ee264fa5d7 = L.polyline(
+                [[56.543121025929146, -4.465143486555838], [53.41893605, -2.359297161165271]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0013813418666795}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_70f594e195812811796a569300adb93f = L.polyline(
+                [[53.04254670694436, -4.033371510611085], [51.5425193, -0.4483349311794966]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.5062294661180102}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_15b8543b1eeb73e0622b72c786ac34cf = L.polyline(
+                [[53.04254670694436, -4.033371510611085], [51.50379515, -0.2007893832317959]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.313200809846128}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_24f6b01cf4b45c69366b5241e9796c2b = L.polyline(
+                [[53.04254670694436, -4.033371510611085], [51.46525455, -0.0690186332146649]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.198773831786646}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_c97c2e22ea8ecc49cc9a3ddf2fc49404 = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [52.4796992, -1.9026911]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.0}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_23c3514f918409524c59c397c8e066d8 = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [51.54279655, -0.1624803135779896]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.7569413751066145}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_d576af3e700012580a4a5eb413b16ca5 = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [51.50379515, -0.2007893832317959]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0062148964173518}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_4f5b3b418a1c3ed30c0ee27b72dd2fbf = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [53.4071991, -2.99168]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0642480753961665}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_fd44dbe83f3ef5d546089e95a2672598 = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [52.0406502, -0.7594092]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.204716450213165}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_4dcb293a0066411ff04e33c83f7ad492 = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [51.46525455, -0.0690186332146649]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.237966423937669}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_cacf8514d31945f25d520e8b0508d907 = L.polyline(
+                [[53.19116334212361, -3.842614072014707], [51.5004439, -0.1265398]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4.485724036305307}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_a16ca1d02414429b0cfd4b8ed1a6fdbd = L.polyline(
+                [[57.32719349617855, -4.794575198063947], [57.5066357, -5.0038367]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.5100789501453837}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_b0afd823f7f894325435a7a99b4c8843 = L.polyline(
+                [[57.32719349617855, -4.794575198063947], [55.88305065, -3.946155104761104]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0340556790375597}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_c61f12d251b312cc4e7095f24ea48e6c = L.polyline(
+                [[56.69910546477056, -3.740558586143748], [53.9112323, -0.5813105]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.489115076749401}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_f39d517a567a6da1b576ea242f872d43 = L.polyline(
+                [[56.69910546477056, -3.740558586143748], [56.3333331, -3.0000001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.488580925828651}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_11b642707e2c6c698cc0a574231f65e5 = L.polyline(
+                [[56.69910546477056, -3.740558586143748], [51.1288633, 1.2986686]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.595340524317076}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_98b6d4a9f006358d270280a2bd54082f = L.polyline(
+                [[56.96438413467648, -4.423651773064449], [53.4794892, -2.2451148]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4544429790630913}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_bce3a59a3ec26ef6e72f93eb43536ce4 = L.polyline(
+                [[56.96438413467648, -4.423651773064449], [55.88305065, -3.946155104761104]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.646165007690873}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_8f90f51f25fe1651429b3051d70e98e2 = L.polyline(
+                [[56.96438413467648, -4.423651773064449], [53.41893605, -2.359297161165271]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.603396080907125}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_28b430dae90b34e7739338e95f180991 = L.polyline(
+                [[56.00930576754188, -5.119886166701756], [53.4071991, -2.99168]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.7637969774522833}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_8cfb10fba7750259d484af1c8ddf1e4b = L.polyline(
+                [[56.00930576754188, -5.119886166701756], [53.4794892, -2.2451148]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0216979882269501}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_8e4af95391ded300e692a361360288bd = L.polyline(
+                [[56.00930576754188, -5.119886166701756], [53.41893605, -2.359297161165271]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.653457848664835}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_cc1f45c90f33ef4b07e04754f7451a42 = L.polyline(
+                [[57.12599897945994, -4.421649111596153], [53.4794892, -2.2451148]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5633912300785262}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_50c1fcf8f0259b65087a43511296f8ed = L.polyline(
+                [[57.12599897945994, -4.421649111596153], [51.1288633, 1.2986686]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.1628812625490834}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_cd244eb8869d62a47c15fe9cecc0b407 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [51.54279655, -0.1624803135779896]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.844003659168874}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_b130cfbf4650707af6229c15ad98354f = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [55.9533456, -3.1883749]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.258019409410554}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_47dcac3bffff0141a715ececd995b66b = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [52.6362, -1.1331969]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.3102959907871314}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_c99479ea430dc539a78eab847528c5b9 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [53.4794892, -2.2451148]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.394110397965522}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_c5224bfc843162cffa02ff6e2d4bf9c7 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [52.0406502, -0.7594092]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.1091362298414422}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_26202977041d3ae5960d619be77a0fbf = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [55.88305065, -3.946155104761104]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0300691134015958}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_64aa88f9727d15a2537dce73a0830730 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [53.3806626, -1.4702278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.172740805850761}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_7dd265ff945f6642d0e2156dd4c3eee2 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [51.46525455, -0.0690186332146649]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.0549265423062189}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_9e3ffb685fa516bd5b585e75b968833c = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [51.1288633, 1.2986686]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8496675603043962}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_0a7d3fd1016b3c6a12bc3a0240099851 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [53.41893605, -2.359297161165271]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.078163190392992}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var poly_line_3bcf84e48ace71e54503ae8568074ff7 = L.polyline(
+                [[56.70639527623697, -4.02123890962024], [53.6829541, -1.4967286]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.5171781248013825}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+        
+    
+            var layer_control_0514cc12abf56475583046550e24281b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f14ec23e42899b6cd780ccb9f607db24,
+                },
+                overlays :  {
+                    "Supply Sites" : marker_cluster_a3dcebc44fc3e02fb77fe6c96a3feba5,
+                    "Demand Sites" : marker_cluster_4493fb0d84203865ada0772172e52b89,
+                },
+            };
+            let layer_control_0514cc12abf56475583046550e24281b = L.control.layers(
+                layer_control_0514cc12abf56475583046550e24281b_layers.base_layers,
+                layer_control_0514cc12abf56475583046550e24281b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_5aa314c02ecc6183a461f1ef318f20d0);
+
+        
+</script>
+</html>

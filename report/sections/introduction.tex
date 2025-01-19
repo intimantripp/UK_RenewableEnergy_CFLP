@@ -1,11 +1,11 @@
 The Facility Location Problem (FLP) is a mathematical optimisation problem that aims 
-to find the locations that a set of supply facilities can serve a set of demand sites at the lowest cost. 
+to find the locations  a set of supply facilities can serve a set of demand sites at the lowest cost. 
 Typically two types of cost are associated with the problem: 
 \textit{setup costs} which are required to setup a facility and 
 \textit{supply/connection costs} associated
-with a facility meeting the demand in a given demand centre. Specific instances of the FLP 
+with a facility meeting the demand of a given demand centre. Specific instances of the FLP 
 are the Uncapacitated Facility Location Problem (UFLP) in which facilities have an unlimited supply of product, and 
-the Capacitated Facility Location Problem (CFLP) in which facilities have a capacity on how much product 
+the Capacitated Facility Location Problem (CFLP) in which facilities have a capacity on how much 
 they can supply \cite{wu2006capacitated}. \par
 
 Lots of challenges encountered in logistics and operations research lend themselves to 
@@ -16,19 +16,17 @@ decisions regarding energy infrastructure. Such models typically aim at obtainin
 regarding changes to existing energy infrastructure or policy; for example, the consequences of subsidies, impact of new supply lanes 
 and effects of introducing new energy generation and storage technologies. As many governments have
 launched projects aiming to transition away from fossil fuels and replace these with renewables, 
-energy systems modelling is now also employed in cost estimation, technology selection and location
-selection for renewables.\par
+energy systems modelling is now also employed in cost estimation, technology selection and pathway
+estimation \cite{hoffmann2024review} \cite{nakata2011application}.\par
 
-
-In this report we present a simplistic modification of the CFLP that can be applied to determine optimal site choice 
+In this report we present a modification of the CFLP that is applied to determine optimal site choice 
 for renewable energy infrastructure, which in this report we call the Energy Systems Location Problem (ESLP).
-We then derive a Lagrangian Relaxation Heuristic (LR Heuristic) that can be used to approximate solutions to this problem,
-partially inspired by \cite{wu2006capacitated}, and apply it to a specific case study: selecting optimal technologies and sites for UK 
+We then derive a Lagrangian Relaxation Heuristic (LR Heuristic) that is used to approximate solutions to this problem,
+partially inspired by \cite{wu2006capacitated}, and apply it to a specific case: selecting optimal technologies and sites for UK 
 renewable energy technologies that can meet the UK's energy demands. This report will be organised as follows. 
 In Section \ref{sec:2} we first outline the CFLP, and then present a modified version to fit requirements for energy systems modelling 
-and obtain the ESLP. We then derive the LR heuristic that will be tested. In Section 3 we describe the
-case study we will test the ESLP and LR Heuristic on, how the data was obtained/processed and details of the problem.
-In Section 4 we will present results and comparitive success the LR Heuristic has against solutions to 
-a brute force solution to the the ESLP.
+and obtain the ESLP. We then derive the LR heuristic that will be tested. In Section \ref{sec:3} we describe the
+case study we will test the ESLP and LR Heuristic on and how the data was obtained and processed.
+We then present results, comparing a direct implementation of the ESLP to the derived LR Heuristic.
 
 
