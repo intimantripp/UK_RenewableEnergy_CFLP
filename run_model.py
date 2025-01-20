@@ -1,9 +1,9 @@
 import pandas as pd
 from optimisation.baseline_model import run_baseline_model
-from optimisation.lr_heuristic import run_model_LR_with_heuristic
+# from optimisation.lr_heuristic import run_model_LR_with_heuristic
 from utils.feasibility_check import check_feasibility
 from utils.rename_cols import rename_headers
-from optimisation.lr_heurstic_2 import run_LR_heuristic
+from optimisation.lr_heurstic import run_LR_heuristic
 
 parameters = {
     "solver": "gurobi",
