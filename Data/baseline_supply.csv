@@ -1,0 +1,4 @@
+Site Name,Technology Type,Capacity (MW),X-coordinate,Y-coordinate,Capacity Factor,Annual Output,CAPEXperMW,Setup Costs,Longitude,Latitude
+Glendoe Hydro Scheme,Large Hydro,100.0,239200,809000,37.5,32850.0,8653000,865300000.0,-0.1372,50.8225
+Gate Burton - Solar & Energy Storage Park,Solar Photovoltaics,531.0,483828,382860,0.1015,472.13334000000003,1327000,704637000.0,-0.7425687469078287,53.3360160258949
+Berwick Bank Offshore Wind Farm ,Wind Offshore,4100.0,432997,728012,0.3954,14201.186399999999,3285000,13468500000.0,-1.4664020168914333,56.44313898606738

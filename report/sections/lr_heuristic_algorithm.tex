@@ -1,0 +1,27 @@
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+    
+    \Input{Initial values for Lagrange multipliers $\lambda_{s,t} \geq 0$, convergence threshold $\epsilon$, maximum iterations $maxIter$}
+    \Output{Final lower bound $LB$, upper bound $UB$, and feasible solution $(x^*, y^*)$}
+    
+    Initialize $LB \leftarrow -\infty$, $UB \leftarrow \infty$, $k \leftarrow 0$\;
+    
+    \While{$k \le maxIter$ \textbf{or} $\frac{UB - LB}{UB} \geq \epsilon$}{
+        Solve LR ESLP \eqref{eq:LR_ESLP} with current $\lambda_{s,t}$ to obtain solution $(x_{LR}^k, y_{LR}^k)$\;
+        Set $LB \leftarrow \max(LB, \mathcal{L}(x_{LR}^k, y_{LR}^k))$\;
+        \If{$(x_{LR}^k, y_{LR}^k)$ is not feasible}{
+            Obtain feasible $(x^k, y^k)$ using greedy algorithm \ref{alg:greedy_feasibility}\;
+        }
+        \Else{
+            Set $(x^k, y^k) \leftarrow (x_{LR}^k, y_{LR}^k)$\;
+        }
+        Set $UB \leftarrow \min(UB, \sum_{s \in S} f_s y^k_s + \sum_{s \in S} \sum_{d \in D} \sum_{t \in T} c_{s,d,t} x^k_{s,d,t})$\;
+        \If{$\frac{UB - LB}{UB} \leq \epsilon$}{
+            Stop.}
+        \Else{$\lambda_{s,t} \leftarrow \max(0, \lambda_{s,t} + alpha_k g_{s,t}) \forall s \in S,\forall k \in K$}
+        Increment $k \leftarrow k + 1$\;
+    }
+    \caption{Lagrangian Relaxation Heuristic for Energy System Location Problem}\label{alg:LRHeuristic}
+\end{algorithm}

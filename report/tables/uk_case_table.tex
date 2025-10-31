@@ -1,0 +1,33 @@
+\begin{table}[h]
+    \centering
+    \caption{Performance Comparison of LR Heuristic and to ESLP}
+    \label{tab:uk_performance}
+    \renewcommand{\arraystretch}{1.2}
+    \setlength{\tabcolsep}{10pt} % Adjust column spacing
+    
+    \begin{tabular}{cc ccc c}
+        \toprule
+        \textbf{NS} & \textbf{ND} & \multicolumn{3}{c}{\textbf{LR Heuristic}} & \multicolumn{1}{c}{\textbf{ESLP}} \\
+        \cmidrule(lr){3-5} \cmidrule(lr){6-6}
+         & & \textbf{Time (s)} & \textbf{Gap} & \textbf{Iterations}& \textbf{Time (s)} \\
+        \midrule
+        3 & 3 & 0.13 & 0 & 1 & 0.13 \\
+        10 & 10 & 0.32 & 0.02 & 5 & 0.16\\
+        10 & 20 & 5.81 & 0.01 & 8 & 0.22 \\
+        10 & 50 & 0.3 & 0.01 & 8 & 0.24\\
+        20 & 10 & 9.98  & 0.01 & 23 & 0.18\\
+        30 & 10 & 13.77  & 0.02 & 23 & 0.23\\
+        50 & 20 & 67.64 & 0.01 & 42 & 0.54 \\
+        50 & 50 & 100.16 & 0.02 & 50 & 1.05 \\
+        100 & 100 & 600.07& 0.01 & 50 & 4.57 \\
+        200 & 200 & 1800.02 & 0.02 & 80 & 20.2 \\
+
+        \bottomrule
+    \end{tabular}
+
+    \vspace{5pt}
+    \footnotesize NS = Number of Supply Sites, ND = Number of Demand Sites. 
+    Gap = (UB - LB)/UB.
+\end{table}
+
+

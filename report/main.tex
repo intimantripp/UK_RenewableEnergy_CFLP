@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{hyperref}
+\addbibresource{bibliography.bib} % Specify the .bib file
+
+
+\setlength{\topmargin}{0.0in}
+\setlength{\oddsidemargin}{0.33in}
+\setlength{\textheight}{9.0in}
+\setlength{\textwidth}{6.0in}
+\renewcommand{\baselinestretch}{1.25}
+
+
+\title{Modelling the UK's Renewable Energy Infrastructure as a Capacitated Facility Location Problem using a Lagrangian Relaxation Heuristic}
+\author{Integer Programming}
+\date{Candidate Number: 1090497}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+
+
+\section{Introduction}
+\input{sections/introduction.tex}
+\section{The CFLP, ESLP and LR heuristic}\label{sec:2}
+\input{sections/section2.tex}
+\section{Modelling UK Renewable Energy Site Locations}\label{sec:3}
+\input{sections/section3.tex}
+\section{Conclusion}\label{sec:conclusion}
+\input{sections/conclusion.tex}
+\printbibliography
+
+\end{document}

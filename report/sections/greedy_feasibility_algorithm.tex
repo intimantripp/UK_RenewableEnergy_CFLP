@@ -1,0 +1,37 @@
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \KwIn{Lagrangian Relaxed Solution $(x_{LR}, y_{LR})$, Demand $r_{d,t}$ for all $d \in D$, $t \in T$, Capacity $u_s$ for all $s \in S$, Big-M constant $M$}
+    \KwOut{Feasible Solution $(x^*, y^*)$}
+    
+    \tcp{Initialize Feasible Solution}
+    Initialize $(x^*, y^*) \leftarrow (x_{LR}, y_{LR})$\;
+    
+    \ForEach{$s \in S$}{
+        \ForEach{$t \in T$}{
+            \tcp{Calculate Excess Supply}
+            $\text{Excess}_{s,t} \leftarrow \sum_{d \in D} x_{LR,s,d,t} - u_s y_{LR,s,t}$\;
+            
+            \If{$\text{Excess}_{s,t} > 0$}{
+                \tcp{Sort Demand Sites by Allocation Cost}
+                $sorted\_demand \leftarrow$ sort $D$ by $c_{s,d,t}$ ascending\;
+                
+                \tcp{Allocate Excess Supply}
+                \ForEach{$d_i \in sorted\_demand$}{
+                    $\text{Available\_Demand} \leftarrow r_{d_i,t} - \sum_{s' \in S} x^*_{s',d_i,t}$\;
+                    \If{$\text{Available\_Demand} > 0$}{
+                        $\text{Allocation} \leftarrow \min(\text{Excess}_{s,t}, \text{Available\_Demand})$\;
+                        $x^*_{s,d_i,t} \leftarrow x^*_{s,d_i,t} - \text{Allocation}$\;
+                        $x^*_{s',d_i,t} \leftarrow x^*_{s',d_i,t} + \text{Allocation}$\;
+                        $\text{Excess}_{s,t} \leftarrow \text{Excess}_{s,t} - \text{Allocation}$\;
+                        
+                        \If{$\text{Excess}_{s,t} \leq 0$}{
+                            \textbf{break}\;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    \caption{Greedy Feasibility Adjustment for ESLP}\label{alg:greedy_feasibility}
+\end{algorithm}

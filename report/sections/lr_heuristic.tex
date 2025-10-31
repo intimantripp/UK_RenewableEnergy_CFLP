@@ -1,0 +1,97 @@
+The result that a solution to the LR ESLP provides a lower bound on the ESLP
+objective function and that cost associated with any feasible $(x, y)$ provides
+an associated upper bound motivates an approach to obtaining an approximate solution to the 
+ESLP through iteratively obtaining solutions that tighten lower and upper bounds. Such heuristics
+have been suggested as efficient approaches to solving large scale instances 
+of the CFLP \cite{cornuejols1991comparison}.
+
+A basic outline of the heuristic proposed is now described. The approach is to iteratively improve
+the lower bound estimation obtained via the LR ESLP by generating a sequence of 
+$\lambda$ parameters in order to achieve the highest lower bound possible. This
+is achieved through implementing a subgradient optimisation algorithm that updates those $\lambda$
+parameters corresponding to violations of the original ESLP. A subgradient method is chosen due to
+its simplicity and widespread use in LR frameworks, and the specific subgradient algorithm chosen
+is the classical subgradient method, also implemented in \cite{wu2006capacitated}. In future, this
+is an aspect that could be modified to investigate possible performance improvements. Other 
+papers also find that subgradient based
+heuristics can also achieve good-quality solutions \cite{cornuejols1991comparison}.
+Each iteration of this method also presents an opportunity to obtain an improved upper bound, as from each LR ESLP solution
+a feasibible solution to the ESLP can be obtained. If this corresponds to
+a lower cost than those found previously, then an improved upper bound of the ESLP is also found.
+The relative gap between these upper and lower bounds is used as both a stopping criterion for this 
+heuristic and a measure of error.
+
+\begin{equation}\label{eq:gap}
+    \text{gap} = \frac{UB - LB}{UB}
+\end{equation}
+
+
+\subsubsection{The lower bound estimation}
+
+Each supply site $s$ at time $t$ in the LR ESLP may violate the capacity constraint, resulting in a 
+subgradient component associated with that constraint. Specifically, let
+
+\begin{equation} g_{s,t} = \sum_{d \in D} x_{s,d,t} - u_s y_s \end{equation}
+
+denote the violation of the capacity constraint at $(s,t)$. Note that $g_{s,t}$ is derived from 
+the current LR ESLP solution $(x,y)$ and indicates whether the associated capacity constraint is 
+respected ($g_{s,t} \leq 0$) or violated ($g_{s,t} > 0$).
+
+We initialise all Lagrange multipliers $\lambda_{s,t}$ at $0$, corresponsing to no initial penalisation.
+This was chosen as empirically resulted in good convergence.
+For each violation i.e. case where $g_{s,t} \geq 0$, we update
+the lagrange multiplier $\lambda_{s,t}$ according to the following subgradient rule. First, we define step-size as follows:
+
+\begin{equation}\label{eq:subgradient}
+    \alpha_k = \frac{UB_k - LB_k}{\sum_{s,t} g_{s,t}^2} 
+\end{equation}
+
+This step size scales inversely with the magnitude of the subgradient,
+ensuring more stable updates as the solution improves.
+
+For each violation (i.e., whenever $g_{s,t} > 0$), we then update the corresponding Lagrange multiplier:
+
+\begin{equation}
+    \lambda_{s,t}^{k+1} = \max\bigl(0, \lambda_{s,t}^{k} + \alpha_k g_{s,t}\bigr).
+\end{equation}
+
+The $\max$ function ensures the multipliers remain non-negative, and 
+therefore ensure that we penalise constraint violations. By iteratively updating the multipliers based on the subgradients
+the LR ESLP solutions increasingly respect the original capacity constraints.
+
+\subsubsection{The upper bound estimation}
+
+If the solution to the LR ESLP $(x_{LR}, y_{LR})$ is feasible, we can use it to obtain an upper bound
+by computing the corresponding cost implied by putting the solution into the ESLP's objective function 
+\ref{eq:ESLP_obj}. Typically, however, the LR ESLP does not find a feasible solution though, and so we 
+perform a feasibility adjustment to $(x_{LR}, y_{LR})$ to obtain a feasible solution $(x, y)$, 
+which is then used to obtain an upper bound on the ESLP. \par
+
+Each violation can be decomposed into a subproblem focussed on a specific supply site $s$ at time $t$
+that provides an excees capacity defined as:
+
+\begin{equation}
+    \text{Excess}_{s,t} = max(\sum_{d \in D}^{} x_{LR, s,d,t} - u_sy_{LR s}, 0).
+\end{equation}
+
+
+To adjust, a greedy algorithm is implemented which redistributes the excess to demand sites in a cost-effective
+manner. For each subproblem, the demand sites $d \in D$ are arranged in ascending order based on 
+their allocation cost $c_{s, d, t}$, and each site then allocates remaining supply until the demand at demand site $d$  
+is either matched or supply site $s$ has no remaining supply to provide, in which case we move to the 
+next supply site. The algorithm is outlined in \ref{alg:greedy_feasibility}
+
+\input{sections/greedy_feasibility_algorithm.tex}
+
+\subsubsection{Algorithm for LR Heuristic}
+
+Combining the results and steps outlined above, we present the LR Heurisic implemented which
+will be assessed in this paper, algorithm \ref{alg:LRHeuristic}.
+
+\input{sections/lr_heuristic_algorithm.tex}
+
+It is highlighted that if the LR ESLP solution is feasible without modification, then we have found the
+optimal solution to the ESLP as this corresponds to $LB = UB$. 
+The above algorithm terminates in this case instantly.
+
+\newpage

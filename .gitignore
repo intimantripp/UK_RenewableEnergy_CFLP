@@ -1,0 +1,61 @@
+# General system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.old
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+env/
+venv/
+ip_venv/
+*.egg-info/
+.eggs/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VSCode
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Miscellaneous
+.vagrant/
+.env
+*.env.local
+*.env.*.local
+.envrc
+.history
+*.history
+
+# Repo specific
+Outputs/
+Data/archive
+Data/
+
+# LaTeX build files
+report/build/
+report/*.aux
+report/*.log
+report/*.toc
+report/*.lof
+report/*.lot
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

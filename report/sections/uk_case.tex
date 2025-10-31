@@ -1,0 +1,46 @@
+We varied the number of demand and supply sites to see how the 
+different methods scaled across these. The number of years considered was kept constant at 22, 
+the full length of data available. Subsets of data obtained were checked for feasibility before 
+attempting to solve. The results of trial runs of 
+different sizes are show in table \ref{tab:uk_performance}.
+
+
+\input{tables/uk_case_table.tex}
+
+The LR Heurisic clearly takes significantly
+longer to reach a solution than simply solving
+the ESLP directly with the Gurobi solver, scaling poorly regardless of whether
+increasing supply sites or demand sites. The LR heuristic 
+however did consistently converge to a tighter
+bound, and given higher maximum iterations the 
+gap continued to narrow in all cases.
+
+We also present some of the figures illustrating the 
+power lines the ESLP solutions converged on \ref{fig:uk_cases}. Figures with more sites were
+too connected for differing sites to be discernable. 
+
+Some comments on what this model suggested for UK renewable energy infrastructure.
+The model favoured Hydro Power stations over any other. This is likely due to 
+transmission being relatively cheap, exacerbated by the use of shortest distances 
+to arrive at transmission costs, and power generation being cheapest for hydro power stations
+alongside large amounts of capacity, even despite their higher setup cost.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/test_8_base.png}
+        \caption{Case with 50 demand sites and 10 supply sites}
+        \label{fig:uk_case_1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering  
+        \includegraphics[width=\textwidth]{figures/test_12_base.png}
+        \caption{Case with 20 demand sites and 50 supply sites}
+        \label{fig:uk_case_2}
+    \end{subfigure}
+    \caption{UK Energy Networks found as solutions to the ESLP}
+    \label{fig:uk_cases}
+\end{figure}
+

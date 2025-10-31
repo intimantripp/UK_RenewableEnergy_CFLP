@@ -1,0 +1,17 @@
+In this report, we have considered a version of the 
+capacitated facility location problem that considers
+fluctuating demand over time, motivated by considering
+the application of the Capacitated Facility Location Problem to energy systems modelling. 
+We proposed a Lagrangian Relaxation Heuristic approach
+to obtaining approximate solutions that decomposed the problem into subproblems, each solved through
+a greedy algorithm. A classical subgradient algorithm  was also implemented, and iteratively 
+the heuristic obtained upper and lower bounds 
+which were iteratively tightened. It was found that this LR Heuristic achieves good approximations, 
+although it takes prohibitively
+longer than the standard solver to converge. This was established through applying this heuristic to 
+a test case, applying it to solve an artificially constructed renewable energy systems site selection
+problem that was constructed using data collected from UK government sources.  
+
+\vspace{1em}
+\textit{The code used to implement this model and generate 
+the supporting data can be found at: https://github.com/intimantripp/UK\_RenewableEnergy\_CFLP/}
